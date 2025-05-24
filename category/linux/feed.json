@@ -1,0 +1,19 @@
+{
+    "version": "https://jsonfeed.org/version/1",
+    "title": "余年的个人空间 • All posts by \"linux\" category",
+    "description": "学习笔记和随笔记录",
+    "home_page_url": "https://yunian.site",
+    "items": [
+        {
+            "id": "https://yunian.site/Note/Linux/Linux%E5%91%BD%E4%BB%A4%E9%80%9F%E6%9F%A5/",
+            "url": "https://yunian.site/Note/Linux/Linux%E5%91%BD%E4%BB%A4%E9%80%9F%E6%9F%A5/",
+            "title": "Linux命令速查",
+            "date_published": "2024-12-23T16:00:00.000Z",
+            "content_html": "<h2 id=\"文件管理\"><a class=\"anchor\" href=\"#文件管理\">#</a> 文件管理</h2>\n<p>-- 删除路径下一定修改时间前的文件<br />\n <figure class=\"highlight vim\"><table><tr><td class=\"gutter\"><pre><span class=\"line\">1</span><br></pre></td><td class=\"code\"><pre><span class=\"line\"><span class=\"keyword\">find</span> /etl/job/script/logs -mtime +<span class=\"number\">10</span> -name <span class=\"string\">&#x27;*.log&#x27;</span> -exec rm -rf &#123;&#125; \\;</span><br></pre></td></tr></table></figure></p>\n<p>注:/'*.log' 为日志文件后缀；+10 表示修改时间为 10 天前；</p>\n<h2 id=\"crontab定时模块\"><a class=\"anchor\" href=\"#crontab定时模块\">#</a> crontab 定时模块</h2>\n<p>前注：<br />\n1、远程连接时，若误使用 crontab 命令等其他导致异常的情况，需要使用 'Ctrl + C' 命令先退出异常；<br />\n 如果直接断开远程连接，将会导致计划列表被清空。<br />\n2、定时命令格式为 '* * * * * sh [脚本文件路径 (含文件名及后缀)] [参数 1] [参数 2] ...';<br />\n 其中 '*' 的位置分别对应分、时、天、月、年的时刻。<br />\n<figure class=\"highlight vim\"><table><tr><td class=\"gutter\"><pre><span class=\"line\">1</span><br><span class=\"line\">2</span><br><span class=\"line\">3</span><br><span class=\"line\">4</span><br><span class=\"line\">5</span><br><span class=\"line\">6</span><br><span class=\"line\">7</span><br><span class=\"line\">8</span><br><span class=\"line\">9</span><br><span class=\"line\">10</span><br><span class=\"line\">11</span><br></pre></td><td class=\"code\"><pre><span class=\"line\">--添加定时计划</span><br><span class=\"line\">crontab -<span class=\"keyword\">e</span></span><br><span class=\"line\"></span><br><span class=\"line\">--删除定时计划</span><br><span class=\"line\">crontab -r</span><br><span class=\"line\"></span><br><span class=\"line\">--显示定时计划列表</span><br><span class=\"line\">crontab -<span class=\"keyword\">l</span></span><br><span class=\"line\"></span><br><span class=\"line\">--编辑定时计划内容</span><br><span class=\"line\">crontab -<span class=\"keyword\">e</span></span><br></pre></td></tr></table></figure></p>\n",
+            "tags": [
+                "开发笔记",
+                "linux"
+            ]
+        }
+    ]
+}

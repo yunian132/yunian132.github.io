@@ -1,0 +1,57 @@
+<?xml version="1.0"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <id>https://yunian.site</id>
+    <title>余年的个人空间 • Posts by &#34;excel&#34; tag</title>
+    <link href="https://yunian.site" />
+    <updated>2025-05-20T09:13:17.981Z</updated>
+    <category term="个人博客" />
+    <category term="Hexo" />
+    <category term="Shoka主题" />
+    <category term="Markdown" />
+    <category term="Shoka" />
+    <category term="开发工具" />
+    <category term="Python" />
+    <category term="数据库" />
+    <category term="服务器运维" />
+    <category term="git" />
+    <category term="图床" />
+    <category term="图库" />
+    <category term="公开课" />
+    <category term="图书" />
+    <category term="论文" />
+    <category term="资源" />
+    <category term="系统工具" />
+    <category term="应用软件" />
+    <category term="图片" />
+    <category term="图标" />
+    <category term="字体" />
+    <category term="音效" />
+    <category term="素材" />
+    <category term="视频后期" />
+    <category term="开发笔记" />
+    <category term="Pycharm" />
+    <category term="Anaconda" />
+    <category term="Mysql" />
+    <category term="SQL" />
+    <category term="Word" />
+    <category term="空白页" />
+    <category term="linux" />
+    <category term="Excel" />
+    <category term="软件使用" />
+    <category term="Windows" />
+    <entry>
+        <id>https://yunian.site/Tutorials/Office/Excel%E8%A1%A8%E6%A0%BC-%E5%9F%BA%E7%A1%80%E4%BD%BF%E7%94%A8/</id>
+        <title>Excel表格-基础使用</title>
+        <link rel="alternate" href="https://yunian.site/Tutorials/Office/Excel%E8%A1%A8%E6%A0%BC-%E5%9F%BA%E7%A1%80%E4%BD%BF%E7%94%A8/"/>
+        <content type="html">&lt;h1 id=&#34;excel表格-基础使用&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#excel表格-基础使用&#34;&gt;#&lt;/a&gt; Excel 表格 - 基础使用&lt;/h1&gt;
+&lt;h2 id=&#34;设置表格外部空白&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#设置表格外部空白&#34;&gt;#&lt;/a&gt; 设置表格外部空白&lt;/h2&gt;
+&lt;p&gt;有时候出于显示或者打印的要求，会将表格的外部区域设置为空白，即只保留表格的边界和内部框线，而表外不显示任何框线。&lt;/p&gt;
+&lt;p&gt;实现该效果其实也很简单，只要将表格的框线根据需求设置好，在菜单区找到 &lt;code&gt;视图&lt;/code&gt; ，取消勾选 &lt;code&gt;网格线&lt;/code&gt; 即可。&lt;/p&gt;
+&lt;h2 id=&#34;序号填充&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#序号填充&#34;&gt;#&lt;/a&gt; 序号填充&lt;/h2&gt;
+&lt;p&gt;手动编写的序号在某些行删除或者新增后，无法自动更新序号，此时可以在序号列中使用 &lt;code&gt;RAW()&lt;/code&gt;  函数根据行号设置序号。&lt;/p&gt;
+&lt;p&gt;单元格中的 &lt;code&gt;RAW()&lt;/code&gt;  函数可以获取单元格所在行的行号，并且可以参与公式运算，所以通常将行号值减去表头所占行数即可得到一个递增的顺序序列，此方法生成的序号会随着单元格所在行号的变化而自动调整。&lt;/p&gt;
+</content>
+        <category term="Excel" />
+        <updated>2025-05-20T09:13:17.981Z</updated>
+    </entry>
+</feed>

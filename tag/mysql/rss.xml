@@ -1,0 +1,69 @@
+<?xml version="1.0"?>
+<rss version="2.0">
+    <channel>
+        <title>余年的个人空间 • Posts by &#34;mysql&#34; tag</title>
+        <link>https://yunian.site</link>
+        <description>学习笔记和随笔记录</description>
+        <language>zh-CN</language>
+        <pubDate>Thu, 02 Jan 2025 00:00:00 +0800</pubDate>
+        <lastBuildDate>Thu, 02 Jan 2025 00:00:00 +0800</lastBuildDate>
+        <category>个人博客</category>
+        <category>Hexo</category>
+        <category>Shoka主题</category>
+        <category>Markdown</category>
+        <category>Shoka</category>
+        <category>开发工具</category>
+        <category>Python</category>
+        <category>数据库</category>
+        <category>服务器运维</category>
+        <category>git</category>
+        <category>图床</category>
+        <category>图库</category>
+        <category>公开课</category>
+        <category>图书</category>
+        <category>论文</category>
+        <category>资源</category>
+        <category>系统工具</category>
+        <category>应用软件</category>
+        <category>图片</category>
+        <category>图标</category>
+        <category>字体</category>
+        <category>音效</category>
+        <category>素材</category>
+        <category>视频后期</category>
+        <category>开发笔记</category>
+        <category>Pycharm</category>
+        <category>Anaconda</category>
+        <category>Mysql</category>
+        <category>SQL</category>
+        <category>Word</category>
+        <category>空白页</category>
+        <category>linux</category>
+        <category>Excel</category>
+        <category>软件使用</category>
+        <category>Windows</category>
+        <item>
+            <guid isPermalink="true">https://yunian.site/Note/Database/Mysql%E5%91%BD%E4%BB%A4%E9%80%9F%E6%9F%A5/</guid>
+            <title>Mysql命令速查</title>
+            <link>https://yunian.site/Note/Database/Mysql%E5%91%BD%E4%BB%A4%E9%80%9F%E6%9F%A5/</link>
+            <category>数据库</category>
+            <category>开发笔记</category>
+            <category>Mysql</category>
+            <pubDate>Thu, 02 Jan 2025 00:00:00 +0800</pubDate>
+            <description><![CDATA[ &lt;h1 id=&#34;服务启动&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#服务启动&#34;&gt;#&lt;/a&gt; 服务启动&lt;/h1&gt;
+&lt;p&gt;&lt;figure class=&#34;highlight bash&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;net start mysql&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/p&gt;
+&lt;h1 id=&#34;服务停止&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#服务停止&#34;&gt;#&lt;/a&gt; 服务停止&lt;/h1&gt;
+&lt;p&gt;&lt;figure class=&#34;highlight bash&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;net stop mysql&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/p&gt;
+&lt;h1 id=&#34;用户登录&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#用户登录&#34;&gt;#&lt;/a&gt; 用户登录&lt;/h1&gt;
+&lt;p&gt;&lt;figure class=&#34;highlight bash&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;mysql -u root -p&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/p&gt;
+&lt;h1 id=&#34;用户退出&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#用户退出&#34;&gt;#&lt;/a&gt; 用户退出&lt;/h1&gt;
+&lt;p&gt;&lt;figure class=&#34;highlight bash&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;built_in&#34;&gt;exit&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/p&gt;
+&lt;h1 id=&#34;重置密码&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#重置密码&#34;&gt;#&lt;/a&gt; 重置密码&lt;/h1&gt;
+&lt;p&gt;&lt;figure class=&#34;highlight bash&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;10&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;# 登录mysql&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;mysql -u root -p&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;# 执行以下命令&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;use mysql;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;update user &lt;span class=&#34;built_in&#34;&gt;set&lt;/span&gt; authentication_string=password(&lt;span class=&#34;string&#34;&gt;&amp;#x27;123456&amp;#x27;&lt;/span&gt;) &lt;span class=&#34;built_in&#34;&gt;where&lt;/span&gt; user=&lt;span class=&#34;string&#34;&gt;&amp;#x27;root&amp;#x27;&lt;/span&gt;;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;flush privileges;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;built_in&#34;&gt;exit&lt;/span&gt;;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;# 重启mysql服务&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;net stop mysql&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;net start mysql&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/p&gt;
+&lt;h1 id=&#34;查看数据库&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#查看数据库&#34;&gt;#&lt;/a&gt; 查看数据库&lt;/h1&gt;
+&lt;p&gt;&lt;figure class=&#34;highlight bash&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;show databases;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/p&gt;
+&lt;h1 id=&#34;创建数据库&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#创建数据库&#34;&gt;#&lt;/a&gt; 创建数据库&lt;/h1&gt;
+ ]]></description>
+        </item>
+    </channel>
+</rss>

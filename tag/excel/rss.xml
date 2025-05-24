@@ -1,0 +1,61 @@
+<?xml version="1.0"?>
+<rss version="2.0">
+    <channel>
+        <title>余年的个人空间 • Posts by &#34;excel&#34; tag</title>
+        <link>https://yunian.site</link>
+        <description>学习笔记和随笔记录</description>
+        <language>zh-CN</language>
+        <pubDate>Tue, 20 May 2025 17:13:17 +0800</pubDate>
+        <lastBuildDate>Tue, 20 May 2025 17:13:17 +0800</lastBuildDate>
+        <category>个人博客</category>
+        <category>Hexo</category>
+        <category>Shoka主题</category>
+        <category>Markdown</category>
+        <category>Shoka</category>
+        <category>开发工具</category>
+        <category>Python</category>
+        <category>数据库</category>
+        <category>服务器运维</category>
+        <category>git</category>
+        <category>图床</category>
+        <category>图库</category>
+        <category>公开课</category>
+        <category>图书</category>
+        <category>论文</category>
+        <category>资源</category>
+        <category>系统工具</category>
+        <category>应用软件</category>
+        <category>图片</category>
+        <category>图标</category>
+        <category>字体</category>
+        <category>音效</category>
+        <category>素材</category>
+        <category>视频后期</category>
+        <category>开发笔记</category>
+        <category>Pycharm</category>
+        <category>Anaconda</category>
+        <category>Mysql</category>
+        <category>SQL</category>
+        <category>Word</category>
+        <category>空白页</category>
+        <category>linux</category>
+        <category>Excel</category>
+        <category>软件使用</category>
+        <category>Windows</category>
+        <item>
+            <guid isPermalink="true">https://yunian.site/Tutorials/Office/Excel%E8%A1%A8%E6%A0%BC-%E5%9F%BA%E7%A1%80%E4%BD%BF%E7%94%A8/</guid>
+            <title>Excel表格-基础使用</title>
+            <link>https://yunian.site/Tutorials/Office/Excel%E8%A1%A8%E6%A0%BC-%E5%9F%BA%E7%A1%80%E4%BD%BF%E7%94%A8/</link>
+            <category>Excel</category>
+            <pubDate>Tue, 20 May 2025 17:13:17 +0800</pubDate>
+            <description><![CDATA[ &lt;h1 id=&#34;excel表格-基础使用&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#excel表格-基础使用&#34;&gt;#&lt;/a&gt; Excel 表格 - 基础使用&lt;/h1&gt;
+&lt;h2 id=&#34;设置表格外部空白&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#设置表格外部空白&#34;&gt;#&lt;/a&gt; 设置表格外部空白&lt;/h2&gt;
+&lt;p&gt;有时候出于显示或者打印的要求，会将表格的外部区域设置为空白，即只保留表格的边界和内部框线，而表外不显示任何框线。&lt;/p&gt;
+&lt;p&gt;实现该效果其实也很简单，只要将表格的框线根据需求设置好，在菜单区找到 &lt;code&gt;视图&lt;/code&gt; ，取消勾选 &lt;code&gt;网格线&lt;/code&gt; 即可。&lt;/p&gt;
+&lt;h2 id=&#34;序号填充&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#序号填充&#34;&gt;#&lt;/a&gt; 序号填充&lt;/h2&gt;
+&lt;p&gt;手动编写的序号在某些行删除或者新增后，无法自动更新序号，此时可以在序号列中使用 &lt;code&gt;RAW()&lt;/code&gt;  函数根据行号设置序号。&lt;/p&gt;
+&lt;p&gt;单元格中的 &lt;code&gt;RAW()&lt;/code&gt;  函数可以获取单元格所在行的行号，并且可以参与公式运算，所以通常将行号值减去表头所占行数即可得到一个递增的顺序序列，此方法生成的序号会随着单元格所在行号的变化而自动调整。&lt;/p&gt;
+ ]]></description>
+        </item>
+    </channel>
+</rss>

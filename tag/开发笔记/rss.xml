@@ -1,0 +1,354 @@
+<?xml version="1.0"?>
+<rss version="2.0">
+    <channel>
+        <title>余年的个人空间 • Posts by &#34;开发笔记&#34; tag</title>
+        <link>https://yunian.site</link>
+        <description>学习笔记和随笔记录</description>
+        <language>zh-CN</language>
+        <pubDate>Thu, 02 Jan 2025 00:00:00 +0800</pubDate>
+        <lastBuildDate>Thu, 02 Jan 2025 00:00:00 +0800</lastBuildDate>
+        <category>个人博客</category>
+        <category>Hexo</category>
+        <category>Shoka主题</category>
+        <category>Markdown</category>
+        <category>Shoka</category>
+        <category>开发工具</category>
+        <category>Python</category>
+        <category>数据库</category>
+        <category>服务器运维</category>
+        <category>git</category>
+        <category>图床</category>
+        <category>图库</category>
+        <category>公开课</category>
+        <category>图书</category>
+        <category>论文</category>
+        <category>资源</category>
+        <category>系统工具</category>
+        <category>应用软件</category>
+        <category>图片</category>
+        <category>图标</category>
+        <category>字体</category>
+        <category>音效</category>
+        <category>素材</category>
+        <category>视频后期</category>
+        <category>开发笔记</category>
+        <category>Pycharm</category>
+        <category>Anaconda</category>
+        <category>Mysql</category>
+        <category>SQL</category>
+        <category>Word</category>
+        <category>空白页</category>
+        <category>linux</category>
+        <category>Excel</category>
+        <category>软件使用</category>
+        <category>Windows</category>
+        <item>
+            <guid isPermalink="true">https://yunian.site/Note/Database/Mysql%E5%91%BD%E4%BB%A4%E9%80%9F%E6%9F%A5/</guid>
+            <title>Mysql命令速查</title>
+            <link>https://yunian.site/Note/Database/Mysql%E5%91%BD%E4%BB%A4%E9%80%9F%E6%9F%A5/</link>
+            <category>数据库</category>
+            <category>开发笔记</category>
+            <category>Mysql</category>
+            <pubDate>Thu, 02 Jan 2025 00:00:00 +0800</pubDate>
+            <description><![CDATA[ &lt;h1 id=&#34;服务启动&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#服务启动&#34;&gt;#&lt;/a&gt; 服务启动&lt;/h1&gt;
+&lt;p&gt;&lt;figure class=&#34;highlight bash&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;net start mysql&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/p&gt;
+&lt;h1 id=&#34;服务停止&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#服务停止&#34;&gt;#&lt;/a&gt; 服务停止&lt;/h1&gt;
+&lt;p&gt;&lt;figure class=&#34;highlight bash&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;net stop mysql&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/p&gt;
+&lt;h1 id=&#34;用户登录&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#用户登录&#34;&gt;#&lt;/a&gt; 用户登录&lt;/h1&gt;
+&lt;p&gt;&lt;figure class=&#34;highlight bash&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;mysql -u root -p&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/p&gt;
+&lt;h1 id=&#34;用户退出&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#用户退出&#34;&gt;#&lt;/a&gt; 用户退出&lt;/h1&gt;
+&lt;p&gt;&lt;figure class=&#34;highlight bash&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;built_in&#34;&gt;exit&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/p&gt;
+&lt;h1 id=&#34;重置密码&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#重置密码&#34;&gt;#&lt;/a&gt; 重置密码&lt;/h1&gt;
+&lt;p&gt;&lt;figure class=&#34;highlight bash&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;10&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;# 登录mysql&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;mysql -u root -p&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;# 执行以下命令&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;use mysql;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;update user &lt;span class=&#34;built_in&#34;&gt;set&lt;/span&gt; authentication_string=password(&lt;span class=&#34;string&#34;&gt;&amp;#x27;123456&amp;#x27;&lt;/span&gt;) &lt;span class=&#34;built_in&#34;&gt;where&lt;/span&gt; user=&lt;span class=&#34;string&#34;&gt;&amp;#x27;root&amp;#x27;&lt;/span&gt;;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;flush privileges;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;built_in&#34;&gt;exit&lt;/span&gt;;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;# 重启mysql服务&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;net stop mysql&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;net start mysql&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/p&gt;
+&lt;h1 id=&#34;查看数据库&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#查看数据库&#34;&gt;#&lt;/a&gt; 查看数据库&lt;/h1&gt;
+&lt;p&gt;&lt;figure class=&#34;highlight bash&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;show databases;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/p&gt;
+&lt;h1 id=&#34;创建数据库&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#创建数据库&#34;&gt;#&lt;/a&gt; 创建数据库&lt;/h1&gt;
+ ]]></description>
+        </item>
+        <item>
+            <guid isPermalink="true">https://yunian.site/Note/Git/Git%E5%91%BD%E4%BB%A4%E9%80%9F%E6%9F%A5/</guid>
+            <title>Git命令速查</title>
+            <link>https://yunian.site/Note/Git/Git%E5%91%BD%E4%BB%A4%E9%80%9F%E6%9F%A5/</link>
+            <category>git</category>
+            <category>开发笔记</category>
+            <pubDate>Tue, 24 Dec 2024 00:00:00 +0800</pubDate>
+            <description><![CDATA[ &lt;h1 id=&#34;本地创建git仓库&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#本地创建git仓库&#34;&gt;#&lt;/a&gt; 本地创建 git 仓库&lt;/h1&gt;
+&lt;p&gt;在本地创建初始仓库，可以在项目的根路径下使用以下 git 初始化命令，建议在空文件夹下使用。&lt;/p&gt;
+&lt;p&gt;&lt;figure class=&#34;highlight bash&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;git init&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/p&gt;
+&lt;p&gt;初始化后，项目根路径下生成了 &lt;code&gt;.git&lt;/code&gt;  文件夹，其中保存着本地仓库的版本管理和配置信息，该文件夹在文件管理器中是默认隐藏的。此外，项目根路径下的所有目录及文件可以称之为工作区。&lt;/p&gt;
+&lt;h1 id=&#34;添加文件到暂存区&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#添加文件到暂存区&#34;&gt;#&lt;/a&gt; 添加文件到暂存区&lt;/h1&gt;
+&lt;p&gt;git 系统提供了暂存区用于保存文件的变更操作，在某一阶段的开发工作完成后，即这个阶段的文件不再变更并且都添加进暂存区后，就可以提交到仓库中。&lt;/p&gt;
+&lt;p&gt;将单个文件的新增或修改等变更添加到暂存区：&lt;/p&gt;
+&lt;p&gt;&lt;figure class=&#34;highlight bash&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;git add main.py&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/p&gt;
+&lt;p&gt;将工作区中所有新增或修改的文件添加到暂存区：&lt;/p&gt;
+&lt;p&gt;&lt;figure class=&#34;highlight bash&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;git add .&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/p&gt;
+&lt;p&gt;只添加修改或者被删除的文件变更到暂存区，不包括新文件：&lt;/p&gt;
+&lt;p&gt;&lt;figure class=&#34;highlight bash&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;git add -u&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/p&gt;
+&lt;p&gt;可以多次向暂存区添加文件，提交到仓库的内容则是暂存区中所有变更合并后的文件内容。&lt;/p&gt;
+&lt;h1 id=&#34;提交文件到仓库当前分支&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#提交文件到仓库当前分支&#34;&gt;#&lt;/a&gt; 提交文件到仓库当前分支&lt;/h1&gt;
+&lt;p&gt;在项目进行到某一开发节点，完成该阶段所有文件的变更并提交到暂存区后，就可以将此刻暂存区的内容提交到 git 仓库的当前使用分支，git 仓库会记录文件的改动情况，并与上一个节点的文件内容进行比较，检查文件中内容变更的位置。&lt;/p&gt;
+&lt;p&gt;提交时可以附带说明，每次提交时添加说明可以在版本回退时快速找到对应的开发节点。&lt;/p&gt;
+&lt;p&gt;&lt;figure class=&#34;highlight bash&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;git commit -m &lt;span class=&#34;string&#34;&gt;&amp;quot;第一次改动&amp;quot;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/p&gt;
+&lt;p&gt;添加参数 &lt;code&gt;-m&lt;/code&gt;  表示添加改动说明，后面双引号中的内容即是此次改动的说明内容，双引号不可省略。&lt;/p&gt;
+&lt;h1 id=&#34;查看仓库当前状态&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#查看仓库当前状态&#34;&gt;#&lt;/a&gt; 查看仓库当前状态&lt;/h1&gt;
+&lt;p&gt;仓库当前状态可以显示暂存区内容以及工作区的文件变更情况：&lt;/p&gt;
+&lt;p&gt;&lt;figure class=&#34;highlight bash&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;git status&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/p&gt;
+&lt;h1 id=&#34;版本回退&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#版本回退&#34;&gt;#&lt;/a&gt; 版本回退&lt;/h1&gt;
+&lt;p&gt;如果需要放弃某次提交的内容变更，想要恢复到某一个历史版本时，就需要进行版本回退操作。&lt;/p&gt;
+&lt;p&gt;在进行版本回退前可以先查看仓库的操作历史：&lt;/p&gt;
+&lt;p&gt;&lt;figure class=&#34;highlight bash&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;git &lt;span class=&#34;built_in&#34;&gt;log&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/p&gt;
+&lt;p&gt;在输出的 &lt;code&gt;log&lt;/code&gt;  日志中，可以找到每次提交操作的 &lt;code&gt;commit id&lt;/code&gt; 、说明和提交时间等信息，操作日志按照时间由近到远的顺序输出，最上方的日志显示的就是最近一次提交的信息。日志信息的行数太多时，可以在命令后面加上 &lt;code&gt;--pretty=oneline&lt;/code&gt;  参数，每个操作的日志信息就会简化成一行显示。&lt;/p&gt;
+&lt;p&gt;找到需要回退的版本后，使用版本回退命令恢复项目的文件内容：&lt;/p&gt;
+&lt;p&gt;&lt;figure class=&#34;highlight bash&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;git reset --hard 1094ab&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;1094ab&lt;/code&gt;  就是日志显示中对应提交操作的 &lt;code&gt;commit id&lt;/code&gt;  前几位的字符，git 会查找到 &lt;code&gt;commit id&lt;/code&gt;  前几位字符与给出的字符匹配的操作进行回退。命令给出的字符不建议太短，否则容易匹配到多条操作，但是 git 也没有输入完整 &lt;code&gt;commit id&lt;/code&gt;  的要求。&lt;/p&gt;
+&lt;p&gt;命令中的 &lt;code&gt;--hard&lt;/code&gt;  参数表示回退到对应版本已提交的状态，换成 &lt;code&gt;--soft&lt;/code&gt;  参数则会回退到对应版本的未提交状态， &lt;code&gt;--mixed&lt;/code&gt;  参数则回退到对应版本已添加但未提交的状态。&lt;/p&gt;
+&lt;p&gt;如果是回退到最近几次的提交版本，还可以使用版本指针的形式代替提交操作的 &lt;code&gt;commit id&lt;/code&gt;  来进行回退。因为 git 使用 &lt;code&gt;HEAD&lt;/code&gt;  指针指向了当前版本，如果回退到上一个版本，将版本指针指向上个版本即可，可以使用下面的命令：&lt;/p&gt;
+&lt;p&gt;&lt;figure class=&#34;highlight bash&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;git reset --hard HEAD^&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/p&gt;
+&lt;p&gt;而上上个版本可以将 &lt;code&gt;HEAD^&lt;/code&gt;  参数换成 &lt;code&gt;HEAD^^&lt;/code&gt; ，即往上回退多少个版本，在 &lt;code&gt;HEAD&lt;/code&gt;  指针后添加多少个 &lt;code&gt;^&lt;/code&gt;  字符即可，回退的版本数较多时，建议使用操作的 &lt;code&gt;commit id&lt;/code&gt; ，或者用 &lt;code&gt;HEAD~100&lt;/code&gt; （表示往上回退 100 个版本）格式的参数。&lt;/p&gt;
+&lt;p&gt;而如果回退后仍有问题，想回到未回退时的版本，这时因为版本指针不能指向回退后被丢弃的版本， &lt;code&gt;git log&lt;/code&gt;  命令也不再显示回退后被丢弃版本的 &lt;code&gt;commit id&lt;/code&gt; ，所以就需要 git 命令的使用日志来找到被丢弃版本的 &lt;code&gt;commit id&lt;/code&gt;  进行恢复，使用以下命令可以查看 git 命令的操作日志：&lt;/p&gt;
+&lt;p&gt;&lt;figure class=&#34;highlight bash&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;git reflog&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/p&gt;
+&lt;p&gt;在输出中找到想要恢复的版本的 &lt;code&gt;commit id&lt;/code&gt; ，再使用 &lt;code&gt;git reset&lt;/code&gt;  版本回退命令即可恢复。&lt;/p&gt;
+&lt;h1 id=&#34;撤销修改&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#撤销修改&#34;&gt;#&lt;/a&gt; 撤销修改&lt;/h1&gt;
+&lt;p&gt;提交到仓库以后的文件需要撤销修改时，可以进行版本回退来实现，而未提交但需要撤销工作区和暂存区的修改时，则分为以下几种情况操作：&lt;/p&gt;
+&lt;p&gt;若工作区做了修改，但未将这次修改添加到暂存区时，撤销工作区的现有修改可以使用以下命令：&lt;/p&gt;
+&lt;p&gt;&lt;figure class=&#34;highlight bash&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;git restore test.txt&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/p&gt;
+&lt;p&gt;该命令会将该文件恢复到上一次提交后的内容，而工作区中在上次提交后的所有修改都会被丢弃。&lt;/p&gt;
+&lt;p&gt;而修改已添加到暂存区并需要撤销不再提交时，则需要指定文件从暂存区恢复文件，再按照上一次工作区修改但暂存区未修改的状态恢复：&lt;/p&gt;
+&lt;p&gt;&lt;figure class=&#34;highlight bash&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;git restore --staged test.txt&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/p&gt;
+&lt;p&gt;命令加入 &lt;code&gt;--staged&lt;/code&gt;  参数后表示将丢弃该文件提交到暂存区的修改，而工作区中在上次添加之后的修改仍会保留。如果还要回退，则可以使用上一条命令将文件内容继续回退到与仓库相同即可。&lt;/p&gt;
+&lt;p&gt;而如果只想取消文件在工作区中的修改，但保留暂存区中的修改，可以将 &lt;code&gt;--staged&lt;/code&gt;  参数换成 &lt;code&gt;--worktree&lt;/code&gt; ，此参数表示只丢弃工作区中的修改，恢复文件内容到上一次提交的状态，而不影响暂存区中已经添加的修改。&lt;/p&gt;
+&lt;p&gt;&lt;figure class=&#34;highlight bash&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;git restore --worktree test.txt&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/p&gt;
+&lt;h1 id=&#34;删除文件&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#删除文件&#34;&gt;#&lt;/a&gt; 删除文件&lt;/h1&gt;
+&lt;p&gt;文件的删除操作在 git 系统中也视为文件的一种变更操作，因此也可以使用 git 命令管理。手动在操作系统的文件管理中将文件删除再添加和提交此次变更，或者使用以下命令来删除文件，均可以被仓库感知和记录。&lt;/p&gt;
+&lt;p&gt;&lt;figure class=&#34;highlight bash&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;git &lt;span class=&#34;built_in&#34;&gt;rm&lt;/span&gt; test.txt&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/p&gt;
+&lt;p&gt;使用上述命令删除文件的同时，也会将该次删除操作添加到暂存区记录。&lt;/p&gt;
+&lt;p&gt;同理，需要恢复被删除的文件可以视为撤销该文件的修改，根据删除操作是否被添加或者提交使用对应命令进行撤销修改或者版本回退操作。需要注意的是，如果文件新增后从未添加到暂存区跟踪变更就被手动删除，这种情况下是无法恢复的。&lt;/p&gt;
+&lt;h1 id=&#34;绑定远程仓库&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#绑定远程仓库&#34;&gt;#&lt;/a&gt; 绑定远程仓库&lt;/h1&gt;
+&lt;p&gt;本地仓库可以绑定到远程仓库，方便文件的备份和分发。&lt;/p&gt;
+&lt;p&gt;将本地仓库关联到远程仓库可以使用以下命令：&lt;/p&gt;
+&lt;p&gt;&lt;figure class=&#34;highlight bash&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;git remote add origin git@server-name:path/repo-name.git&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/p&gt;
+&lt;p&gt;其中 &lt;code&gt;origin&lt;/code&gt;  参数是本地仓库中使用这个远程仓库时的别名，可以自定义。而 &lt;code&gt;origin&lt;/code&gt;  参数后面的则是远程仓库 &lt;code&gt;SSH&lt;/code&gt;  格式的 &lt;code&gt;git&lt;/code&gt;  地址，使用该命令关联远程仓库时需要将示例地址修改为对应的 &lt;code&gt;git&lt;/code&gt;  地址。&lt;/p&gt;
+&lt;p&gt;第一次绑定后，可以将本地仓库 master（或者 main）主分支的内容推送到远程仓库。&lt;/p&gt;
+&lt;p&gt;&lt;figure class=&#34;highlight bash&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;git push -u origin master&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/p&gt;
+&lt;p&gt;在第一次推送时加入 &lt;code&gt;-u&lt;/code&gt;  参数可以将本地仓库与远程仓库的主分支关联起来，也能简化后续的推送命令。而命令中的 &lt;code&gt;master&lt;/code&gt;  参数是主分支名称，推送时不仅要切换到对应分支，还要注意本地仓库的分支名称与远程仓库的分支名称最好保持一致。&lt;/p&gt;
+&lt;p&gt;git 系统也可以解除本地仓库与远程仓库的绑定关系，解绑后可以重新关联其他远程仓库的地址。&lt;/p&gt;
+&lt;p&gt;在本地先查看仓库已经绑定的远程仓库信息：&lt;/p&gt;
+&lt;p&gt;&lt;figure class=&#34;highlight bash&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;git remote -v&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/p&gt;
+&lt;p&gt;根据远程仓库的名称解除绑定关系：&lt;/p&gt;
+&lt;p&gt;&lt;figure class=&#34;highlight bash&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;git remote &lt;span class=&#34;built_in&#34;&gt;rm&lt;/span&gt; origin&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/p&gt;
+&lt;p&gt;解除绑定关系后，之前的远程仓库并不会被物理删除，需要去远程仓库的托管平台（如 Github、Gitee 等）删除。&lt;/p&gt;
+&lt;h1 id=&#34;克隆远程仓库&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#克隆远程仓库&#34;&gt;#&lt;/a&gt; 克隆远程仓库&lt;/h1&gt;
+&lt;p&gt;当项目需要其他人协作或者更换了设备进行开发时，就可以从远程仓库克隆项目，获取项目的开发记录。&lt;/p&gt;
+&lt;p&gt;&lt;figure class=&#34;highlight plaintext&#34;&gt;&lt;figcaption&gt;&lt;span&gt;clone&lt;/span&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;git clone git@server-name:path/repo-name.git&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/p&gt;
+&lt;p&gt;克隆时将 git 仓库地址替换为对应远程仓库的地址即可，克隆后本地仓库的仅有远程仓库 master 分支的内容。&lt;/p&gt;
+&lt;p&gt;因为主分支通常是不在本地直接开发的，所以克隆后还需要 &lt;code&gt;dev&lt;/code&gt;  等分支进行开发，此时应在本地创建对应分支并指定远程仓库的对应开发分支，使用以下命令：&lt;/p&gt;
+&lt;p&gt;&lt;figure class=&#34;highlight bash&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;git switch -c dev origin/dev&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/p&gt;
+&lt;p&gt;这样就在本地创建并切换到了开发分支，同时还关联了远程仓库对应的开发分支，推送和拉取命令也是修改和获取开发分支的内容。&lt;/p&gt;
+&lt;p&gt;如果本地已有其他的开发分支并且未与远程仓库的开发分支对应关联，在拉取时会提示 &lt;code&gt;no tracking infomation&lt;/code&gt; ，此时需要先建立关联：&lt;/p&gt;
+&lt;p&gt;&lt;figure class=&#34;highlight bash&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;git branch --set-upstream-to dev origin/dev&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/p&gt;
+&lt;h1 id=&#34;分支管理&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#分支管理&#34;&gt;#&lt;/a&gt; 分支管理&lt;/h1&gt;
+&lt;p&gt;项目开发时，主分支的代码通常需要稳定、安全，所以开发时需要在其他分支上修改、提交，功能完成后再合并到主分支，所以项目的开发进程往往还需要管理许多主分支外的功能分支。&lt;/p&gt;
+&lt;h2 id=&#34;分支查看&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#分支查看&#34;&gt;#&lt;/a&gt; 分支查看&lt;/h2&gt;
+&lt;p&gt;git 系统中主要使用 &lt;code&gt;git branch&lt;/code&gt;  命令管理所有的分支，查看项目中已有的分支可以使用以下命令：&lt;/p&gt;
+&lt;p&gt;&lt;figure class=&#34;highlight bash&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;git branch&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/p&gt;
+&lt;p&gt;##　分支创建&lt;/p&gt;
+&lt;p&gt;因为 git 新版本引入了新的命令，所有创建分支有几种方式，以创建新的开发分支 &lt;code&gt;dev&lt;/code&gt;  为例：&lt;/p&gt;
+&lt;p&gt;创建新分支：&lt;/p&gt;
+&lt;p&gt;&lt;figure class=&#34;highlight bash&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;git branch dev&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/p&gt;
+&lt;p&gt;切换到新分支&lt;/p&gt;
+&lt;p&gt;&lt;figure class=&#34;highlight bash&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;git checkout dev&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/p&gt;
+&lt;p&gt;也可以一条命令完成创建并切换，在旧版 git 系统中，切换命令中加入 &lt;code&gt;-d&lt;/code&gt;  参数：&lt;/p&gt;
+&lt;p&gt;&lt;figure class=&#34;highlight bash&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;git checkout -b dev&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/p&gt;
+&lt;p&gt;新版 git 系统引入了新的分支切换命令，创建并切换到新分支在新的切换命令中加入 &lt;code&gt;-c&lt;/code&gt;  参数：&lt;/p&gt;
+&lt;p&gt;&lt;figure class=&#34;highlight bash&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;git switch -c dev&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/p&gt;
+&lt;h2 id=&#34;分支合并&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#分支合并&#34;&gt;#&lt;/a&gt; 分支合并&lt;/h2&gt;
+&lt;p&gt;当开发分支的功能完成后，可以将开发分支的内容合并到主分支中。合并前，需要先切换到主分支：&lt;/p&gt;
+&lt;p&gt;&lt;figure class=&#34;highlight bash&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;git switch master  &lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/p&gt;
+&lt;p&gt;上面命令是新版 git 系统的分支切换命令，也可以使用旧版命令：&lt;/p&gt;
+&lt;p&gt;&lt;figure class=&#34;highlight bash&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;git checkout master&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/p&gt;
+&lt;p&gt;切换到主分支后，再合并开发分支：&lt;/p&gt;
+&lt;p&gt;&lt;figure class=&#34;highlight bash&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;git merge dev&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/p&gt;
+&lt;p&gt;在合并时，如果两个分支在上一次合并前对同一处文件进行了修改，合并时 git 提示冲突，需要决定当前分支的文件内容将采用当前分支或者合并分支的内容，解决冲突后才能进行合并。&lt;/p&gt;
+&lt;p&gt;##　分支删除&lt;/p&gt;
+&lt;p&gt;当某一分支的功能开发完成不再使用时，可以将该分支删除：&lt;/p&gt;
+&lt;p&gt;&lt;figure class=&#34;highlight bash&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;git branch -d dev&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/p&gt;
+&lt;h1 id=&#34;推送远程仓库&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#推送远程仓库&#34;&gt;#&lt;/a&gt; 推送远程仓库&lt;/h1&gt;
+&lt;p&gt;每次提交到本地仓库以后，决定是否推送到远程仓库，推送时必须指定分支，下面的命令表示将本地的 &lt;code&gt;master&lt;/code&gt;  分支推送到远程仓库 &lt;code&gt;origin&lt;/code&gt; 。&lt;/p&gt;
+&lt;p&gt;&lt;figure class=&#34;highlight bash&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;git push origin master&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/p&gt;
+&lt;h1 id=&#34;拉取远程仓库&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#拉取远程仓库&#34;&gt;#&lt;/a&gt; 拉取远程仓库&lt;/h1&gt;
+&lt;p&gt;推送到远程仓库前，如果有其他人对远程仓库进行了提交，此时需要先拉取远程仓库的更新内容，解决与本地的冲突后，再进行推送才能成功。&lt;/p&gt;
+&lt;p&gt;&lt;figure class=&#34;highlight bash&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;git pull&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/p&gt;
+&lt;h1 id=&#34;标签设置&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#标签设置&#34;&gt;#&lt;/a&gt; 标签设置&lt;/h1&gt;
+&lt;p&gt;除了使用 &lt;code&gt;commit id&lt;/code&gt;  找到对应的提交外，也可以在某个重要时间节点的提交上打上标签，之后用这个标签就可以找到指定的提交。&lt;/p&gt;
+&lt;p&gt;标签默认与最新提交关联，每个重要节点及时打上标签可以便于日后调整项目内容，如果没有第一时间打上标签，也可以在命令中指定对应提交的 &lt;code&gt;commit id&lt;/code&gt;  与标签进行绑定。&lt;/p&gt;
+&lt;h2 id=&#34;创建标签&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#创建标签&#34;&gt;#&lt;/a&gt; 创建标签&lt;/h2&gt;
+&lt;p&gt;在当前最新的提交上打上版本号 &lt;code&gt;v1.0&lt;/code&gt; ，或者指定某个提交创建标签：&lt;/p&gt;
+&lt;p&gt;&lt;figure class=&#34;highlight bash&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;git tag v1.0&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/p&gt;
+&lt;p&gt;&lt;figure class=&#34;highlight bash&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;git tag v1.0 f5c6334&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/p&gt;
+&lt;p&gt;创建带有说明信息的标签：&lt;/p&gt;
+&lt;p&gt;&lt;figure class=&#34;highlight bash&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;git tag -a v1.0 -m &lt;span class=&#34;string&#34;&gt;&amp;quot;版本1.0&amp;quot;&lt;/span&gt; f5c6334&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/p&gt;
+&lt;p&gt;参数 &lt;code&gt;-a&lt;/code&gt;  后输入标签名称，参数 &lt;code&gt;-m&lt;/code&gt;  后输入需要附带的标签说明，最后则是指定标签绑定的提交的 &lt;code&gt;commit id&lt;/code&gt; 。&lt;/p&gt;
+&lt;p&gt;因为标签与提交是绑定的，如果打上标签的提交所在的分支合并到了其他分支，那么其他分支也会出现这个标签。&lt;/p&gt;
+&lt;h2 id=&#34;查看标签信息&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#查看标签信息&#34;&gt;#&lt;/a&gt; 查看标签信息&lt;/h2&gt;
+&lt;p&gt;查看所有标签使用以下命令：&lt;/p&gt;
+&lt;p&gt;&lt;figure class=&#34;highlight bash&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;git tag&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/p&gt;
+&lt;p&gt;查看某个标签的详细信息：&lt;/p&gt;
+&lt;p&gt;&lt;figure class=&#34;highlight bash&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;git show &amp;lt;tagname&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/p&gt;
+&lt;h2 id=&#34;推送标签到远程仓库&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#推送标签到远程仓库&#34;&gt;#&lt;/a&gt; 推送标签到远程仓库&lt;/h2&gt;
+&lt;p&gt;标签创建后只存储在本地，不会自动随着提交被推送到远程仓库，需要单独推送标签到远程仓库：&lt;/p&gt;
+&lt;p&gt;&lt;figure class=&#34;highlight bash&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;git push origin &amp;lt;tagname&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/p&gt;
+&lt;p&gt;可以将所有未推送过的标签一起推送到远程仓库：&lt;/p&gt;
+&lt;p&gt;&lt;figure class=&#34;highlight plaintext&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;git push origin --tags&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/p&gt;
+&lt;h2 id=&#34;删除标签&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#删除标签&#34;&gt;#&lt;/a&gt; 删除标签&lt;/h2&gt;
+&lt;p&gt;标签没有推送到远程仓库时，以下命令可在本地安全删除错误或者弃用的标签：&lt;/p&gt;
+&lt;p&gt;&lt;figure class=&#34;highlight bash&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;git tag -d v1.0&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/p&gt;
+&lt;p&gt;如果标签被推送到了远程仓库，则需要先在本地删除，再将空标签推送到远程仓库上：&lt;/p&gt;
+&lt;p&gt;&lt;figure class=&#34;highlight bash&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;git push origin :refs/tags/&amp;lt;tagname&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/p&gt;
+&lt;p&gt;命令中冒号不可省略，冒号的左边为空表示本地标签为空，而冒号右边则指定远程仓库中要删除的标签，其中 &lt;code&gt;refs/tags/&lt;/code&gt;  为 &lt;code&gt;git系统&lt;/code&gt; 中存储标签的路径，使用命令时，将 &lt;code&gt;&amp;lt;tagname&amp;gt;&lt;/code&gt;  替换为要删除的标签名称即可。&lt;/p&gt;
+&lt;h1 id=&#34;自定义git命令&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#自定义git命令&#34;&gt;#&lt;/a&gt; 自定义 git 命令&lt;/h1&gt;
+&lt;p&gt;自定义 git 命令是指 git 系统允许为较长的命令设置别名，从而使用简单的命令完成一些常用、或者复杂连续的动作。&lt;/p&gt;
+&lt;p&gt;注意下面自定义命令的格式：&lt;/p&gt;
+&lt;p&gt;①需要简化的命令参数中没有空格，可以不用加引号&lt;/p&gt;
+&lt;p&gt;②命令参数中有引号，必须加引号&lt;/p&gt;
+&lt;p&gt;③命令参数中含有单引号，则两边加双引号&lt;/p&gt;
+&lt;p&gt;④命令参数中含有双引号，两边加单引号&lt;/p&gt;
+&lt;p&gt;当然，设置别名并不是长度越短越好，建议仍然保持简化命令的易读性，比如：&lt;/p&gt;
+&lt;p&gt;将 &lt;code&gt;status&lt;/code&gt;  简化为 &lt;code&gt;st&lt;/code&gt; 、 &lt;code&gt;checkout&lt;/code&gt;  简化为 &lt;code&gt;co&lt;/code&gt; 、 &lt;code&gt;commit&lt;/code&gt;  设为 &lt;code&gt;ci&lt;/code&gt;  以及 &lt;code&gt;branch&lt;/code&gt;  改为 &lt;code&gt;br&lt;/code&gt;  等：&lt;/p&gt;
+&lt;p&gt;&lt;figure class=&#34;highlight bash&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;git config --global alias.st status&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;git config --global alias.co checkout&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;git config --global alias.ci commit&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;git config --global alias.br branch&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/p&gt;
+&lt;p&gt;其中 &lt;code&gt;git config&lt;/code&gt;  命令就是 git 系统中调整用户或者仓库配置命令。还可以注意到以上命令中都有 &lt;code&gt;--global&lt;/code&gt;  参数，表示修改的是全局设置，即配置后可以在当前 git 用户下的所有仓库中生效，如果不加此参数，则配置只对当前仓库生效。&lt;/p&gt;
+&lt;p&gt;另外别名前面的 &lt;code&gt;alias&lt;/code&gt;  指的就是 git 系统配置文件中的 &lt;code&gt;alias&lt;/code&gt;  别名配置项，本地仓库的配置可以在 &lt;code&gt;.git&lt;/code&gt;  目录下查看 &lt;code&gt;config&lt;/code&gt;  文件，用户的全局配置在用户主目录下的 &lt;code&gt;.gitconfig&lt;/code&gt;  文件中，该文件是默认隐藏的，查看或者修改时要获取相应的权限。&lt;/p&gt;
+&lt;p&gt;此处再列举几个推荐设置的简化命令：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;显示最近一次的提交信息，原命令为 &lt;code&gt;git log -1&lt;/code&gt; ，简化为 &lt;code&gt;git last&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;&lt;figure class=&#34;highlight bash&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;git config --global alias.last &lt;span class=&#34;string&#34;&gt;&amp;#x27;log -1&amp;#x27;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;调整日志中各信息的格式和颜色，使信息更加突出，原命令非常长，可以用简化命令 &lt;code&gt;git lg&lt;/code&gt;  代替，以下是别名设置：&lt;/p&gt;
+&lt;p&gt;&lt;figure class=&#34;highlight bash&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;git config --global alias.lg &lt;span class=&#34;string&#34;&gt;&amp;quot;log --color --graph --pretty=format:&amp;#x27;%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)&amp;lt;%an&amp;gt;%Creset&amp;#x27; --abbrev-commit&amp;quot;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/p&gt;
+&lt;p&gt;还有一种日志信息格式和配色的调整命令，日志中将显示每个提交的 6 个信息： commit、parent commit、title、content、author、date，并且每个提交之间存在两行间隔，简化命令为 &lt;code&gt;git plog&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;&lt;figure class=&#34;highlight bash&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;git config --global alias.plog &lt;span class=&#34;string&#34;&gt;&amp;quot;log --graph --date=format:&amp;#x27;%Y-%m-%d %H:%M:%S %A&amp;#x27; --pretty=format:&amp;#x27;%C(bold blue)commit: %C(bold red)%h %C(#00A89A)%d %n%C(bold blue)parent commit: %C(bold red)%p %n%C(bold blue)title: %C(#A477DB)%s  %n%C(bold blue)content: %C(#A477DB)%b %n%C(bold blue)author: %C(#1B92D6)%an &amp;lt;%ae&amp;gt; %n%C(bold blue)date: %C(#1B92D6)%ad %C(#4EAB00)(%ar) %n%n&amp;#x27;&amp;quot;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+ ]]></description>
+        </item>
+        <item>
+            <guid isPermalink="true">https://yunian.site/Note/Database/SQL%E8%AF%AD%E5%8F%A5%E9%80%9F%E6%9F%A5/</guid>
+            <title>数据库语句速查</title>
+            <link>https://yunian.site/Note/Database/SQL%E8%AF%AD%E5%8F%A5%E9%80%9F%E6%9F%A5/</link>
+            <category>数据库</category>
+            <category>开发笔记</category>
+            <category>SQL</category>
+            <pubDate>Tue, 24 Dec 2024 00:00:00 +0800</pubDate>
+            <description><![CDATA[ &lt;h1 id=&#34;信息查询&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#信息查询&#34;&gt;#&lt;/a&gt; 信息查询&lt;/h1&gt;
+&lt;h2 id=&#34;数据库版本查询&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#数据库版本查询&#34;&gt;#&lt;/a&gt; 数据库版本查询&lt;/h2&gt;
+&lt;p&gt;&lt;figure class=&#34;highlight sql&#34;&gt;&lt;figcaption&gt;&lt;span&gt;系统信息查询&lt;/span&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;keyword&#34;&gt;SELECT&lt;/span&gt; &lt;span class=&#34;operator&#34;&gt;*&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;keyword&#34;&gt;FROM&lt;/span&gt; SUB_ENERGY.ODS_MEDIACORRESPONDENCE&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/p&gt;
+&lt;h2 id=&#34;存储过程列表&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#存储过程列表&#34;&gt;#&lt;/a&gt; 存储过程列表&lt;/h2&gt;
+&lt;p&gt;&lt;figure class=&#34;highlight plaintext&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;SELECT PROCSCHEMA, PROCNAME FROM SYSCAT.PROCEDURES&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;WHERE PROCSCHEMA IN (&amp;#x27;SCHEMA_NAME1&amp;#x27;,&amp;#x27;SCHEMA_NAME2&amp;#x27; )&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;ORDER BY PROCSCHEMA&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/p&gt;
+&lt;h2 id=&#34;表空间大小容量查询&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#表空间大小容量查询&#34;&gt;#&lt;/a&gt; 表空间大小容量查询&lt;/h2&gt;
+&lt;pre&gt;&lt;code&gt;SELECT substr (tbsp_name, 1, 20) AS TABLESPACE_NAME,
+	substr (tbsp_content_type, 1, 10) AS TABLESPACE_TYPE,
+	sum(tbsp_total_size_kb) / 1024 AS TOTAL_MB,
+	sum(tbsp_used_size_kb) / 1024 AS USED_MB,
+	sum(tbsp_free_size_kb) / 1024 AS FREE_MB,
+	tbsp_page_size AS PAGE_SIZE
+FROM SYSIBMADM.TBSP_UTILIZATION
+GROUP BY tbsp_name, tbsp_content_type, tbsp_page_size
+ORDER BY 1
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h1 id=&#34;数据结构修改&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#数据结构修改&#34;&gt;#&lt;/a&gt; 数据结构修改&lt;/h1&gt;
+&lt;h2 id=&#34;修改数据类型&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#修改数据类型&#34;&gt;#&lt;/a&gt; 修改数据类型&lt;/h2&gt;
+&lt;p&gt;&lt;figure class=&#34;highlight bash&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;ALTER TABLE schema_name.table_name ALTER column_name SET DATA TYPE DECIMAL(19, 4); &lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/p&gt;
+&lt;h2 id=&#34;数据分区重组&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#数据分区重组&#34;&gt;#&lt;/a&gt; 数据分区重组&lt;/h2&gt;
+&lt;p&gt;&lt;figure class=&#34;highlight bash&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;CALL sysproc.admin_cmd(&lt;span class=&#34;string&#34;&gt;&amp;#x27;reorg table SchemaName.TableName&amp;#x27;&lt;/span&gt;);&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/p&gt;
+&lt;h2 id=&#34;修改数据库约束&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#修改数据库约束&#34;&gt;#&lt;/a&gt; 修改数据库约束&lt;/h2&gt;
+&lt;p&gt;&lt;figure class=&#34;highlight bash&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;ALTER TABLE schema_name.table_name ALTER MODULE_TYPE SET NOT NULL;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;REORG TABLE schema_name.table_name;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;ALTER TABLE schema_name.table_name DROP PRIMARY KEY;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;ALTER TABLE schema_name.table_name ADD PRIMARY KEY(SRC_SYSTEM_ID, DES_SYSTEM_ID, SRC_OBJECT_NAME, DES_OBJECT_NAME, MODULE_TYPE);&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/p&gt;
+&lt;h2 id=&#34;字段类型-长度-精度修改&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#字段类型-长度-精度修改&#34;&gt;#&lt;/a&gt; 字段类型、长度、精度修改&lt;/h2&gt;
+&lt;p&gt;&lt;figure class=&#34;highlight bash&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;ALTER TABLE schema_name.table_name ALTER column_name SET DATA TYPE DECIMAL(19, 4); &lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/p&gt;
+&lt;h2 id=&#34;表解锁语句长度-精度修改易导致锁表需要重新组织数据&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#表解锁语句长度-精度修改易导致锁表需要重新组织数据&#34;&gt;#&lt;/a&gt; 表解锁语句（长度、精度修改易导致锁表，需要重新组织数据）&lt;/h2&gt;
+&lt;p&gt;&lt;figure class=&#34;highlight bash&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;CALL sysproc.admin_cmd(&lt;span class=&#34;string&#34;&gt;&amp;#x27;REORG TABLE schema_name.table_name&amp;#x27;&lt;/span&gt;);&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/p&gt;
+&lt;h1 id=&#34;日期运算&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#日期运算&#34;&gt;#&lt;/a&gt; 日期运算&lt;/h1&gt;
+&lt;h2 id=&#34;日期间隔天数&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#日期间隔天数&#34;&gt;#&lt;/a&gt; 日期间隔天数&lt;/h2&gt;
+&lt;p&gt;&lt;figure class=&#34;highlight plaintext&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;SELECT DAYS(TO_DATE(&amp;#x27;20221028&amp;#x27;,&amp;#x27;YYYYMMDD&amp;#x27;)) - DAYS(TO_DATE(&amp;#x27;20220929&amp;#x27;,&amp;#x27;YYYYMMDD&amp;#x27;)) AS D_TIME &lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;FROM SYSIBM.DUAL;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/p&gt;
+&lt;h2 id=&#34;unix时间戳转换数据库时间戳&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#unix时间戳转换数据库时间戳&#34;&gt;#&lt;/a&gt; UNIX 时间戳转换数据库时间戳&lt;/h2&gt;
+&lt;p&gt;&lt;figure class=&#34;highlight bash&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;TIMESTAMP(&lt;span class=&#34;string&#34;&gt;&amp;#x27;1970-01-01 00:00:00.000&amp;#x27;&lt;/span&gt;) + (1680150600036 / 1000.0) SECONDS;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/p&gt;
+&lt;h2 id=&#34;查询上个月日期字段精度为年月&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#查询上个月日期字段精度为年月&#34;&gt;#&lt;/a&gt; 查询上个月 (日期字段精度为年月)&lt;/h2&gt;
+&lt;p&gt;&lt;figure class=&#34;highlight bash&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;SELECT YEARMONTH_COLUMN FROM TABLENAME&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;WHERE  TABLENAME.YEARMONTH_COLUMN = (&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;	SELECT YEAR (TO_DATE (&lt;span class=&#34;string&#34;&gt;&amp;#x27;202204&amp;#x27;&lt;/span&gt; + &lt;span class=&#34;string&#34;&gt;&amp;#x27;01&amp;#x27;&lt;/span&gt;, &lt;span class=&#34;string&#34;&gt;&amp;#x27;YYYYMMDD&amp;#x27;&lt;/span&gt;) - 1 MONTH)|| RIGHT (100+ MONTH (TO_DATE (&lt;span class=&#34;string&#34;&gt;&amp;#x27;202204&amp;#x27;&lt;/span&gt; || &lt;span class=&#34;string&#34;&gt;&amp;#x27;01&amp;#x27;&lt;/span&gt;, &lt;span class=&#34;string&#34;&gt;&amp;#x27;YYYYMMDD&amp;#x27;&lt;/span&gt;) - 1 MONTH),2)&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;	FROM SYSIBM.DUAL&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;);&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/p&gt;
+&lt;h1 id=&#34;授权管理&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#授权管理&#34;&gt;#&lt;/a&gt; 授权管理&lt;/h1&gt;
+&lt;h2 id=&#34;数据表授权&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#数据表授权&#34;&gt;#&lt;/a&gt; 数据表授权&lt;/h2&gt;
+&lt;p&gt;&lt;figure class=&#34;highlight bash&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;GRANT ALTER, DELETE, INDEX, INSERT, SELECT, REFERENCES, UPDATE ON TABLE schema_name.table_name TO USER user_name WITH GRANT OPTION;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/p&gt;
+&lt;h2 id=&#34;函数授权&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#函数授权&#34;&gt;#&lt;/a&gt; 函数授权&lt;/h2&gt;
+&lt;p&gt;&lt;figure class=&#34;highlight bash&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;GRANT EXECUTE ON SPECIFIC FUNCTION schema_name.function_name TO USER user_name WITH GRANT OPTION;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/p&gt;
+&lt;h2 id=&#34;存储过程授权&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#存储过程授权&#34;&gt;#&lt;/a&gt; 存储过程授权&lt;/h2&gt;
+&lt;p&gt;&lt;figure class=&#34;highlight bash&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;GRANT EXECUTE ON PROCEDURE schema_name.procedure_name TO USER user_name WITH GRANT OPTION;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/p&gt;
+&lt;h2 id=&#34;授权用户取消被授权用户的表级操作授权及被授权用户user_name给其他用户关联授予的相应权限&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#授权用户取消被授权用户的表级操作授权及被授权用户user_name给其他用户关联授予的相应权限&#34;&gt;#&lt;/a&gt; 授权用户取消被授权用户的表级操作授权，及被授权用户 user_name 给其他用户关联授予的相应权限&lt;/h2&gt;
+&lt;p&gt;&lt;figure class=&#34;highlight bash&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;REVOKE SELECT ON schema_name.table_name FROM user_name&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/p&gt;
+&lt;h2 id=&#34;授权用户取消被授权用户的表级操作授权及被授权用户user_name给其他用户关联授予的相应权限-2&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#授权用户取消被授权用户的表级操作授权及被授权用户user_name给其他用户关联授予的相应权限-2&#34;&gt;#&lt;/a&gt; 授权用户取消被授权用户的表级操作授权，及被授权用户 user_name 给其他用户关联授予的相应权限&lt;/h2&gt;
+&lt;p&gt;&lt;figure class=&#34;highlight bash&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;REVOKE SELECT ON schema_name.table_name FROM user_name CASCADE&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/p&gt;
+ ]]></description>
+        </item>
+        <item>
+            <guid isPermalink="true">https://yunian.site/Note/Linux/Linux%E5%91%BD%E4%BB%A4%E9%80%9F%E6%9F%A5/</guid>
+            <title>Linux命令速查</title>
+            <link>https://yunian.site/Note/Linux/Linux%E5%91%BD%E4%BB%A4%E9%80%9F%E6%9F%A5/</link>
+            <category>开发笔记</category>
+            <category>linux</category>
+            <pubDate>Tue, 24 Dec 2024 00:00:00 +0800</pubDate>
+            <description><![CDATA[ &lt;h2 id=&#34;文件管理&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#文件管理&#34;&gt;#&lt;/a&gt; 文件管理&lt;/h2&gt;
+&lt;p&gt;-- 删除路径下一定修改时间前的文件&lt;br /&gt;
+ &lt;figure class=&#34;highlight vim&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;keyword&#34;&gt;find&lt;/span&gt; /etl/job/script/logs -mtime +&lt;span class=&#34;number&#34;&gt;10&lt;/span&gt; -name &lt;span class=&#34;string&#34;&gt;&amp;#x27;*.log&amp;#x27;&lt;/span&gt; -exec rm -rf &amp;#123;&amp;#125; \;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/p&gt;
+&lt;p&gt;注:/&#39;*.log&#39; 为日志文件后缀；+10 表示修改时间为 10 天前；&lt;/p&gt;
+&lt;h2 id=&#34;crontab定时模块&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#crontab定时模块&#34;&gt;#&lt;/a&gt; crontab 定时模块&lt;/h2&gt;
+&lt;p&gt;前注：&lt;br /&gt;
+1、远程连接时，若误使用 crontab 命令等其他导致异常的情况，需要使用 &#39;Ctrl + C&#39; 命令先退出异常；&lt;br /&gt;
+ 如果直接断开远程连接，将会导致计划列表被清空。&lt;br /&gt;
+2、定时命令格式为 &#39;* * * * * sh [脚本文件路径 (含文件名及后缀)] [参数 1] [参数 2] ...&#39;;&lt;br /&gt;
+ 其中 &#39;*&#39; 的位置分别对应分、时、天、月、年的时刻。&lt;br /&gt;
+&lt;figure class=&#34;highlight vim&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;10&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;11&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;--添加定时计划&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;crontab -&lt;span class=&#34;keyword&#34;&gt;e&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;--删除定时计划&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;crontab -r&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;--显示定时计划列表&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;crontab -&lt;span class=&#34;keyword&#34;&gt;l&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;--编辑定时计划内容&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;crontab -&lt;span class=&#34;keyword&#34;&gt;e&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/p&gt;
+ ]]></description>
+        </item>
+        <item>
+            <guid isPermalink="true">https://yunian.site/Note/Python/1%E3%80%81Python%E7%8E%AF%E5%A2%83/</guid>
+            <title>1、Python环境</title>
+            <link>https://yunian.site/Note/Python/1%E3%80%81Python%E7%8E%AF%E5%A2%83/</link>
+            <category>Python</category>
+            <category>开发笔记</category>
+            <category>Pycharm</category>
+            <category>Anaconda</category>
+            <pubDate>Tue, 11 Jan 2022 11:06:45 +0800</pubDate>
+            <description><![CDATA[ &lt;h1 id=&#34;python开发环境搭建一&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#python开发环境搭建一&#34;&gt;#&lt;/a&gt; Python 开发环境搭建（一）&lt;/h1&gt;
+&lt;p&gt;Anaconda 和 Pycharm 两个可以作为 Python 集成开发环境，Anaconda 可以很方便地管理不同版本的 python 语言环境和依赖包的导入等，Pycharm 则是 Jetbrains 公司发行的 python 工程集成开发软件，功能强大，能够胜任各种需求的开发任务。&lt;/p&gt;
+&lt;h2 id=&#34;一-pycharm安装&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#一-pycharm安装&#34;&gt;#&lt;/a&gt; 一、 Pycharm 安装&lt;/h2&gt;
+&lt;p&gt;Pycharm 官网的下载地址：&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly93d3cuamV0YnJhaW5zLmNvbS9weWNoYXJtL2Rvd25sb2FkLyNzZWN0aW9uPXdpbmRvd3M=&#34;&gt;https://www.jetbrains.com/pycharm/download/#section=windows&lt;/span&gt;&lt;br /&gt;
+Pycharm 社区版免费下载，可以满足大部分的使用需求。&lt;/p&gt;
+&lt;p&gt;Pycharm 2021.3 Community 社区版下载安装：&lt;br /&gt;
+&lt;img data-src=&#34;https://s2.loli.net/2023/12/28/pGnP6F4rgbXHvif.png&#34; alt=&#34;Pycharm下载&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://s2.loli.net/2023/12/29/4q2yWLZDgof6czu.png&#34; alt=&#34;Pycharm安装-1&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;选择安装目录，不建议直接安装在系统盘&lt;br /&gt;
+&lt;img data-src=&#34;https://s2.loli.net/2023/12/29/stPncSQY7ReZx4X.png&#34; alt=&#34;Pycharm安装-2&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;勾选需要的设置后，进行下一步&lt;br /&gt;
+&lt;img data-src=&#34;https://s2.loli.net/2023/12/29/zEwbJMWnrUv25Ks.png&#34; alt=&#34;Pycharm安装-3&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://s2.loli.net/2023/12/29/YZ93gbmMji57G8H.png&#34; alt=&#34;Pycharm安装-4&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;最后需要重启计算机，才算完成 Pycharm 的安装，但是可以推迟重启&lt;br /&gt;
+&lt;img data-src=&#34;https://s2.loli.net/2023/12/29/EzLnGSDiodu7hX2.png&#34; alt=&#34;Pycharm安装-5&#34; /&gt;&lt;/p&gt;
+&lt;h2 id=&#34;二-anaconda安装&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#二-anaconda安装&#34;&gt;#&lt;/a&gt; 二、Anaconda 安装&lt;/h2&gt;
+&lt;p&gt;Anaconda 官网的下载地址：&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly93d3cuYW5hY29uZGEuY29tL3Byb2R1Y3RzL2luZGl2aWR1YWw=&#34;&gt;https://www.anaconda.com/products/individual&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;Anaconda Navigator 2.1.1 下载安装:&lt;br /&gt;
+&lt;img data-src=&#34;https://s2.loli.net/2023/12/29/SopeiCtGL5XMIDk.png&#34; alt=&#34;Anaconda下载&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://s2.loli.net/2023/12/29/N2nUu4vWy8L5xso.png&#34; alt=&#34;Anaconda安装-1&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;同意用户协议，否则无法进行下一步&lt;br /&gt;
+&lt;img data-src=&#34;https://s2.loli.net/2023/12/29/mtiZvQDW1Mu5RKF.png&#34; alt=&#34;Anaconda安装-2&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;建议选择为所有用户（All Users）安装&lt;br /&gt;
+&lt;img data-src=&#34;https://s2.loli.net/2023/12/29/nV8tFv6ojXIY9ar.png&#34; alt=&#34;Anaconda安装-3&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;选择安装目录&lt;br /&gt;
+&lt;img data-src=&#34;https://s2.loli.net/2023/12/29/JWLXi9NKvqzGTgB.png&#34; alt=&#34;Anaconda安装-4&#34; /&gt;&lt;br /&gt;
+ 第一个选项为自动配置系统环境变量，第二个选项为 Anaconda 默认安装的语言环境为 python3.9，之后默认下一步即可&lt;br /&gt;
+&lt;img data-src=&#34;https://s2.loli.net/2023/12/29/QwrPMnpbSsTUEDB.png&#34; alt=&#34;Anaconda安装-5&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://s2.loli.net/2023/12/29/1BR5jxLdKvACHGh.png&#34; alt=&#34;Anaconda安装-6&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://s2.loli.net/2023/12/29/N9uzOpR2ey6S4cV.png&#34; alt=&#34;Anaconda安装-7&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;这里两个选项都可以不用勾选&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://s2.loli.net/2023/12/29/Mtz4wKWG2TljyoI.png&#34; alt=&#34;Anaconda安装-8&#34; /&gt;&lt;/p&gt;
+ ]]></description>
+        </item>
+    </channel>
+</rss>

@@ -1,0 +1,124 @@
+<?xml version="1.0"?>
+<rss version="2.0">
+    <channel>
+        <title>余年的个人空间 • Posts by &#34;数据库&#34; category</title>
+        <link>https://yunian.site</link>
+        <description>学习笔记和随笔记录</description>
+        <language>zh-CN</language>
+        <pubDate>Thu, 02 Jan 2025 00:00:00 +0800</pubDate>
+        <lastBuildDate>Thu, 02 Jan 2025 00:00:00 +0800</lastBuildDate>
+        <category>个人博客</category>
+        <category>Hexo</category>
+        <category>Shoka主题</category>
+        <category>Markdown</category>
+        <category>Shoka</category>
+        <category>开发工具</category>
+        <category>Python</category>
+        <category>数据库</category>
+        <category>服务器运维</category>
+        <category>git</category>
+        <category>图床</category>
+        <category>图库</category>
+        <category>公开课</category>
+        <category>图书</category>
+        <category>论文</category>
+        <category>资源</category>
+        <category>系统工具</category>
+        <category>应用软件</category>
+        <category>图片</category>
+        <category>图标</category>
+        <category>字体</category>
+        <category>音效</category>
+        <category>素材</category>
+        <category>视频后期</category>
+        <category>开发笔记</category>
+        <category>Pycharm</category>
+        <category>Anaconda</category>
+        <category>Mysql</category>
+        <category>SQL</category>
+        <category>Word</category>
+        <category>空白页</category>
+        <category>linux</category>
+        <category>Excel</category>
+        <category>软件使用</category>
+        <category>Windows</category>
+        <item>
+            <guid isPermalink="true">https://yunian.site/Note/Database/Mysql%E5%91%BD%E4%BB%A4%E9%80%9F%E6%9F%A5/</guid>
+            <title>Mysql命令速查</title>
+            <link>https://yunian.site/Note/Database/Mysql%E5%91%BD%E4%BB%A4%E9%80%9F%E6%9F%A5/</link>
+            <category>数据库</category>
+            <category>开发笔记</category>
+            <category>Mysql</category>
+            <pubDate>Thu, 02 Jan 2025 00:00:00 +0800</pubDate>
+            <description><![CDATA[ &lt;h1 id=&#34;服务启动&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#服务启动&#34;&gt;#&lt;/a&gt; 服务启动&lt;/h1&gt;
+&lt;p&gt;&lt;figure class=&#34;highlight bash&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;net start mysql&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/p&gt;
+&lt;h1 id=&#34;服务停止&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#服务停止&#34;&gt;#&lt;/a&gt; 服务停止&lt;/h1&gt;
+&lt;p&gt;&lt;figure class=&#34;highlight bash&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;net stop mysql&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/p&gt;
+&lt;h1 id=&#34;用户登录&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#用户登录&#34;&gt;#&lt;/a&gt; 用户登录&lt;/h1&gt;
+&lt;p&gt;&lt;figure class=&#34;highlight bash&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;mysql -u root -p&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/p&gt;
+&lt;h1 id=&#34;用户退出&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#用户退出&#34;&gt;#&lt;/a&gt; 用户退出&lt;/h1&gt;
+&lt;p&gt;&lt;figure class=&#34;highlight bash&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;built_in&#34;&gt;exit&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/p&gt;
+&lt;h1 id=&#34;重置密码&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#重置密码&#34;&gt;#&lt;/a&gt; 重置密码&lt;/h1&gt;
+&lt;p&gt;&lt;figure class=&#34;highlight bash&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;10&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;# 登录mysql&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;mysql -u root -p&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;# 执行以下命令&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;use mysql;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;update user &lt;span class=&#34;built_in&#34;&gt;set&lt;/span&gt; authentication_string=password(&lt;span class=&#34;string&#34;&gt;&amp;#x27;123456&amp;#x27;&lt;/span&gt;) &lt;span class=&#34;built_in&#34;&gt;where&lt;/span&gt; user=&lt;span class=&#34;string&#34;&gt;&amp;#x27;root&amp;#x27;&lt;/span&gt;;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;flush privileges;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;built_in&#34;&gt;exit&lt;/span&gt;;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;# 重启mysql服务&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;net stop mysql&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;net start mysql&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/p&gt;
+&lt;h1 id=&#34;查看数据库&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#查看数据库&#34;&gt;#&lt;/a&gt; 查看数据库&lt;/h1&gt;
+&lt;p&gt;&lt;figure class=&#34;highlight bash&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;show databases;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/p&gt;
+&lt;h1 id=&#34;创建数据库&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#创建数据库&#34;&gt;#&lt;/a&gt; 创建数据库&lt;/h1&gt;
+ ]]></description>
+        </item>
+        <item>
+            <guid isPermalink="true">https://yunian.site/Note/Database/SQL%E8%AF%AD%E5%8F%A5%E9%80%9F%E6%9F%A5/</guid>
+            <title>数据库语句速查</title>
+            <link>https://yunian.site/Note/Database/SQL%E8%AF%AD%E5%8F%A5%E9%80%9F%E6%9F%A5/</link>
+            <category>数据库</category>
+            <category>开发笔记</category>
+            <category>SQL</category>
+            <pubDate>Tue, 24 Dec 2024 00:00:00 +0800</pubDate>
+            <description><![CDATA[ &lt;h1 id=&#34;信息查询&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#信息查询&#34;&gt;#&lt;/a&gt; 信息查询&lt;/h1&gt;
+&lt;h2 id=&#34;数据库版本查询&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#数据库版本查询&#34;&gt;#&lt;/a&gt; 数据库版本查询&lt;/h2&gt;
+&lt;p&gt;&lt;figure class=&#34;highlight sql&#34;&gt;&lt;figcaption&gt;&lt;span&gt;系统信息查询&lt;/span&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;keyword&#34;&gt;SELECT&lt;/span&gt; &lt;span class=&#34;operator&#34;&gt;*&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;keyword&#34;&gt;FROM&lt;/span&gt; SUB_ENERGY.ODS_MEDIACORRESPONDENCE&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/p&gt;
+&lt;h2 id=&#34;存储过程列表&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#存储过程列表&#34;&gt;#&lt;/a&gt; 存储过程列表&lt;/h2&gt;
+&lt;p&gt;&lt;figure class=&#34;highlight plaintext&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;SELECT PROCSCHEMA, PROCNAME FROM SYSCAT.PROCEDURES&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;WHERE PROCSCHEMA IN (&amp;#x27;SCHEMA_NAME1&amp;#x27;,&amp;#x27;SCHEMA_NAME2&amp;#x27; )&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;ORDER BY PROCSCHEMA&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/p&gt;
+&lt;h2 id=&#34;表空间大小容量查询&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#表空间大小容量查询&#34;&gt;#&lt;/a&gt; 表空间大小容量查询&lt;/h2&gt;
+&lt;pre&gt;&lt;code&gt;SELECT substr (tbsp_name, 1, 20) AS TABLESPACE_NAME,
+	substr (tbsp_content_type, 1, 10) AS TABLESPACE_TYPE,
+	sum(tbsp_total_size_kb) / 1024 AS TOTAL_MB,
+	sum(tbsp_used_size_kb) / 1024 AS USED_MB,
+	sum(tbsp_free_size_kb) / 1024 AS FREE_MB,
+	tbsp_page_size AS PAGE_SIZE
+FROM SYSIBMADM.TBSP_UTILIZATION
+GROUP BY tbsp_name, tbsp_content_type, tbsp_page_size
+ORDER BY 1
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h1 id=&#34;数据结构修改&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#数据结构修改&#34;&gt;#&lt;/a&gt; 数据结构修改&lt;/h1&gt;
+&lt;h2 id=&#34;修改数据类型&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#修改数据类型&#34;&gt;#&lt;/a&gt; 修改数据类型&lt;/h2&gt;
+&lt;p&gt;&lt;figure class=&#34;highlight bash&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;ALTER TABLE schema_name.table_name ALTER column_name SET DATA TYPE DECIMAL(19, 4); &lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/p&gt;
+&lt;h2 id=&#34;数据分区重组&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#数据分区重组&#34;&gt;#&lt;/a&gt; 数据分区重组&lt;/h2&gt;
+&lt;p&gt;&lt;figure class=&#34;highlight bash&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;CALL sysproc.admin_cmd(&lt;span class=&#34;string&#34;&gt;&amp;#x27;reorg table SchemaName.TableName&amp;#x27;&lt;/span&gt;);&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/p&gt;
+&lt;h2 id=&#34;修改数据库约束&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#修改数据库约束&#34;&gt;#&lt;/a&gt; 修改数据库约束&lt;/h2&gt;
+&lt;p&gt;&lt;figure class=&#34;highlight bash&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;ALTER TABLE schema_name.table_name ALTER MODULE_TYPE SET NOT NULL;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;REORG TABLE schema_name.table_name;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;ALTER TABLE schema_name.table_name DROP PRIMARY KEY;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;ALTER TABLE schema_name.table_name ADD PRIMARY KEY(SRC_SYSTEM_ID, DES_SYSTEM_ID, SRC_OBJECT_NAME, DES_OBJECT_NAME, MODULE_TYPE);&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/p&gt;
+&lt;h2 id=&#34;字段类型-长度-精度修改&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#字段类型-长度-精度修改&#34;&gt;#&lt;/a&gt; 字段类型、长度、精度修改&lt;/h2&gt;
+&lt;p&gt;&lt;figure class=&#34;highlight bash&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;ALTER TABLE schema_name.table_name ALTER column_name SET DATA TYPE DECIMAL(19, 4); &lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/p&gt;
+&lt;h2 id=&#34;表解锁语句长度-精度修改易导致锁表需要重新组织数据&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#表解锁语句长度-精度修改易导致锁表需要重新组织数据&#34;&gt;#&lt;/a&gt; 表解锁语句（长度、精度修改易导致锁表，需要重新组织数据）&lt;/h2&gt;
+&lt;p&gt;&lt;figure class=&#34;highlight bash&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;CALL sysproc.admin_cmd(&lt;span class=&#34;string&#34;&gt;&amp;#x27;REORG TABLE schema_name.table_name&amp;#x27;&lt;/span&gt;);&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/p&gt;
+&lt;h1 id=&#34;日期运算&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#日期运算&#34;&gt;#&lt;/a&gt; 日期运算&lt;/h1&gt;
+&lt;h2 id=&#34;日期间隔天数&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#日期间隔天数&#34;&gt;#&lt;/a&gt; 日期间隔天数&lt;/h2&gt;
+&lt;p&gt;&lt;figure class=&#34;highlight plaintext&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;SELECT DAYS(TO_DATE(&amp;#x27;20221028&amp;#x27;,&amp;#x27;YYYYMMDD&amp;#x27;)) - DAYS(TO_DATE(&amp;#x27;20220929&amp;#x27;,&amp;#x27;YYYYMMDD&amp;#x27;)) AS D_TIME &lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;FROM SYSIBM.DUAL;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/p&gt;
+&lt;h2 id=&#34;unix时间戳转换数据库时间戳&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#unix时间戳转换数据库时间戳&#34;&gt;#&lt;/a&gt; UNIX 时间戳转换数据库时间戳&lt;/h2&gt;
+&lt;p&gt;&lt;figure class=&#34;highlight bash&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;TIMESTAMP(&lt;span class=&#34;string&#34;&gt;&amp;#x27;1970-01-01 00:00:00.000&amp;#x27;&lt;/span&gt;) + (1680150600036 / 1000.0) SECONDS;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/p&gt;
+&lt;h2 id=&#34;查询上个月日期字段精度为年月&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#查询上个月日期字段精度为年月&#34;&gt;#&lt;/a&gt; 查询上个月 (日期字段精度为年月)&lt;/h2&gt;
+&lt;p&gt;&lt;figure class=&#34;highlight bash&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;SELECT YEARMONTH_COLUMN FROM TABLENAME&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;WHERE  TABLENAME.YEARMONTH_COLUMN = (&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;	SELECT YEAR (TO_DATE (&lt;span class=&#34;string&#34;&gt;&amp;#x27;202204&amp;#x27;&lt;/span&gt; + &lt;span class=&#34;string&#34;&gt;&amp;#x27;01&amp;#x27;&lt;/span&gt;, &lt;span class=&#34;string&#34;&gt;&amp;#x27;YYYYMMDD&amp;#x27;&lt;/span&gt;) - 1 MONTH)|| RIGHT (100+ MONTH (TO_DATE (&lt;span class=&#34;string&#34;&gt;&amp;#x27;202204&amp;#x27;&lt;/span&gt; || &lt;span class=&#34;string&#34;&gt;&amp;#x27;01&amp;#x27;&lt;/span&gt;, &lt;span class=&#34;string&#34;&gt;&amp;#x27;YYYYMMDD&amp;#x27;&lt;/span&gt;) - 1 MONTH),2)&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;	FROM SYSIBM.DUAL&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;);&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/p&gt;
+&lt;h1 id=&#34;授权管理&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#授权管理&#34;&gt;#&lt;/a&gt; 授权管理&lt;/h1&gt;
+&lt;h2 id=&#34;数据表授权&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#数据表授权&#34;&gt;#&lt;/a&gt; 数据表授权&lt;/h2&gt;
+&lt;p&gt;&lt;figure class=&#34;highlight bash&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;GRANT ALTER, DELETE, INDEX, INSERT, SELECT, REFERENCES, UPDATE ON TABLE schema_name.table_name TO USER user_name WITH GRANT OPTION;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/p&gt;
+&lt;h2 id=&#34;函数授权&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#函数授权&#34;&gt;#&lt;/a&gt; 函数授权&lt;/h2&gt;
+&lt;p&gt;&lt;figure class=&#34;highlight bash&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;GRANT EXECUTE ON SPECIFIC FUNCTION schema_name.function_name TO USER user_name WITH GRANT OPTION;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/p&gt;
+&lt;h2 id=&#34;存储过程授权&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#存储过程授权&#34;&gt;#&lt;/a&gt; 存储过程授权&lt;/h2&gt;
+&lt;p&gt;&lt;figure class=&#34;highlight bash&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;GRANT EXECUTE ON PROCEDURE schema_name.procedure_name TO USER user_name WITH GRANT OPTION;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/p&gt;
+&lt;h2 id=&#34;授权用户取消被授权用户的表级操作授权及被授权用户user_name给其他用户关联授予的相应权限&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#授权用户取消被授权用户的表级操作授权及被授权用户user_name给其他用户关联授予的相应权限&#34;&gt;#&lt;/a&gt; 授权用户取消被授权用户的表级操作授权，及被授权用户 user_name 给其他用户关联授予的相应权限&lt;/h2&gt;
+&lt;p&gt;&lt;figure class=&#34;highlight bash&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;REVOKE SELECT ON schema_name.table_name FROM user_name&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/p&gt;
+&lt;h2 id=&#34;授权用户取消被授权用户的表级操作授权及被授权用户user_name给其他用户关联授予的相应权限-2&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#授权用户取消被授权用户的表级操作授权及被授权用户user_name给其他用户关联授予的相应权限-2&#34;&gt;#&lt;/a&gt; 授权用户取消被授权用户的表级操作授权，及被授权用户 user_name 给其他用户关联授予的相应权限&lt;/h2&gt;
+&lt;p&gt;&lt;figure class=&#34;highlight bash&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;REVOKE SELECT ON schema_name.table_name FROM user_name CASCADE&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/p&gt;
+ ]]></description>
+        </item>
+    </channel>
+</rss>

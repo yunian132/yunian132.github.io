@@ -1,0 +1,85 @@
+<?xml version="1.0"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <id>https://yunian.site</id>
+    <title>余年的个人空间 • Posts by &#34;python开发&#34; category</title>
+    <link href="https://yunian.site" />
+    <updated>2022-01-11T03:06:45.000Z</updated>
+    <category term="个人博客" />
+    <category term="Hexo" />
+    <category term="Shoka主题" />
+    <category term="Markdown" />
+    <category term="Shoka" />
+    <category term="开发工具" />
+    <category term="Python" />
+    <category term="数据库" />
+    <category term="服务器运维" />
+    <category term="git" />
+    <category term="图床" />
+    <category term="图库" />
+    <category term="公开课" />
+    <category term="图书" />
+    <category term="论文" />
+    <category term="资源" />
+    <category term="系统工具" />
+    <category term="应用软件" />
+    <category term="图片" />
+    <category term="图标" />
+    <category term="字体" />
+    <category term="音效" />
+    <category term="素材" />
+    <category term="视频后期" />
+    <category term="开发笔记" />
+    <category term="Pycharm" />
+    <category term="Anaconda" />
+    <category term="Mysql" />
+    <category term="SQL" />
+    <category term="Word" />
+    <category term="空白页" />
+    <category term="linux" />
+    <category term="Excel" />
+    <category term="软件使用" />
+    <category term="Windows" />
+    <entry>
+        <id>https://yunian.site/Note/Python/1%E3%80%81Python%E7%8E%AF%E5%A2%83/</id>
+        <title>1、Python环境</title>
+        <link rel="alternate" href="https://yunian.site/Note/Python/1%E3%80%81Python%E7%8E%AF%E5%A2%83/"/>
+        <content type="html">&lt;h1 id=&#34;python开发环境搭建一&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#python开发环境搭建一&#34;&gt;#&lt;/a&gt; Python 开发环境搭建（一）&lt;/h1&gt;
+&lt;p&gt;Anaconda 和 Pycharm 两个可以作为 Python 集成开发环境，Anaconda 可以很方便地管理不同版本的 python 语言环境和依赖包的导入等，Pycharm 则是 Jetbrains 公司发行的 python 工程集成开发软件，功能强大，能够胜任各种需求的开发任务。&lt;/p&gt;
+&lt;h2 id=&#34;一-pycharm安装&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#一-pycharm安装&#34;&gt;#&lt;/a&gt; 一、 Pycharm 安装&lt;/h2&gt;
+&lt;p&gt;Pycharm 官网的下载地址：&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly93d3cuamV0YnJhaW5zLmNvbS9weWNoYXJtL2Rvd25sb2FkLyNzZWN0aW9uPXdpbmRvd3M=&#34;&gt;https://www.jetbrains.com/pycharm/download/#section=windows&lt;/span&gt;&lt;br /&gt;
+Pycharm 社区版免费下载，可以满足大部分的使用需求。&lt;/p&gt;
+&lt;p&gt;Pycharm 2021.3 Community 社区版下载安装：&lt;br /&gt;
+&lt;img data-src=&#34;https://s2.loli.net/2023/12/28/pGnP6F4rgbXHvif.png&#34; alt=&#34;Pycharm下载&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://s2.loli.net/2023/12/29/4q2yWLZDgof6czu.png&#34; alt=&#34;Pycharm安装-1&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;选择安装目录，不建议直接安装在系统盘&lt;br /&gt;
+&lt;img data-src=&#34;https://s2.loli.net/2023/12/29/stPncSQY7ReZx4X.png&#34; alt=&#34;Pycharm安装-2&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;勾选需要的设置后，进行下一步&lt;br /&gt;
+&lt;img data-src=&#34;https://s2.loli.net/2023/12/29/zEwbJMWnrUv25Ks.png&#34; alt=&#34;Pycharm安装-3&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://s2.loli.net/2023/12/29/YZ93gbmMji57G8H.png&#34; alt=&#34;Pycharm安装-4&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;最后需要重启计算机，才算完成 Pycharm 的安装，但是可以推迟重启&lt;br /&gt;
+&lt;img data-src=&#34;https://s2.loli.net/2023/12/29/EzLnGSDiodu7hX2.png&#34; alt=&#34;Pycharm安装-5&#34; /&gt;&lt;/p&gt;
+&lt;h2 id=&#34;二-anaconda安装&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#二-anaconda安装&#34;&gt;#&lt;/a&gt; 二、Anaconda 安装&lt;/h2&gt;
+&lt;p&gt;Anaconda 官网的下载地址：&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly93d3cuYW5hY29uZGEuY29tL3Byb2R1Y3RzL2luZGl2aWR1YWw=&#34;&gt;https://www.anaconda.com/products/individual&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;Anaconda Navigator 2.1.1 下载安装:&lt;br /&gt;
+&lt;img data-src=&#34;https://s2.loli.net/2023/12/29/SopeiCtGL5XMIDk.png&#34; alt=&#34;Anaconda下载&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://s2.loli.net/2023/12/29/N2nUu4vWy8L5xso.png&#34; alt=&#34;Anaconda安装-1&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;同意用户协议，否则无法进行下一步&lt;br /&gt;
+&lt;img data-src=&#34;https://s2.loli.net/2023/12/29/mtiZvQDW1Mu5RKF.png&#34; alt=&#34;Anaconda安装-2&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;建议选择为所有用户（All Users）安装&lt;br /&gt;
+&lt;img data-src=&#34;https://s2.loli.net/2023/12/29/nV8tFv6ojXIY9ar.png&#34; alt=&#34;Anaconda安装-3&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;选择安装目录&lt;br /&gt;
+&lt;img data-src=&#34;https://s2.loli.net/2023/12/29/JWLXi9NKvqzGTgB.png&#34; alt=&#34;Anaconda安装-4&#34; /&gt;&lt;br /&gt;
+ 第一个选项为自动配置系统环境变量，第二个选项为 Anaconda 默认安装的语言环境为 python3.9，之后默认下一步即可&lt;br /&gt;
+&lt;img data-src=&#34;https://s2.loli.net/2023/12/29/QwrPMnpbSsTUEDB.png&#34; alt=&#34;Anaconda安装-5&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://s2.loli.net/2023/12/29/1BR5jxLdKvACHGh.png&#34; alt=&#34;Anaconda安装-6&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://s2.loli.net/2023/12/29/N9uzOpR2ey6S4cV.png&#34; alt=&#34;Anaconda安装-7&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;这里两个选项都可以不用勾选&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://s2.loli.net/2023/12/29/Mtz4wKWG2TljyoI.png&#34; alt=&#34;Anaconda安装-8&#34; /&gt;&lt;/p&gt;
+</content>
+        <category term="Python" />
+        <category term="开发笔记" />
+        <category term="Pycharm" />
+        <category term="Anaconda" />
+        <updated>2022-01-11T03:06:45.000Z</updated>
+    </entry>
+</feed>

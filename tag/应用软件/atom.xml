@@ -1,0 +1,108 @@
+<?xml version="1.0"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <id>https://yunian.site</id>
+    <title>余年的个人空间 • Posts by &#34;应用软件&#34; tag</title>
+    <link href="https://yunian.site" />
+    <updated>2025-05-20T09:13:17.969Z</updated>
+    <category term="个人博客" />
+    <category term="Hexo" />
+    <category term="Shoka主题" />
+    <category term="Markdown" />
+    <category term="Shoka" />
+    <category term="开发工具" />
+    <category term="Python" />
+    <category term="数据库" />
+    <category term="服务器运维" />
+    <category term="git" />
+    <category term="图床" />
+    <category term="图库" />
+    <category term="公开课" />
+    <category term="图书" />
+    <category term="论文" />
+    <category term="资源" />
+    <category term="系统工具" />
+    <category term="应用软件" />
+    <category term="图片" />
+    <category term="图标" />
+    <category term="字体" />
+    <category term="音效" />
+    <category term="素材" />
+    <category term="视频后期" />
+    <category term="开发笔记" />
+    <category term="Pycharm" />
+    <category term="Anaconda" />
+    <category term="Mysql" />
+    <category term="SQL" />
+    <category term="Word" />
+    <category term="空白页" />
+    <category term="linux" />
+    <category term="Excel" />
+    <category term="软件使用" />
+    <category term="Windows" />
+    <entry>
+        <id>https://yunian.site/Resources/%E5%BA%94%E7%94%A8%E8%BD%AF%E4%BB%B6/</id>
+        <title>应用软件</title>
+        <link rel="alternate" href="https://yunian.site/Resources/%E5%BA%94%E7%94%A8%E8%BD%AF%E4%BB%B6/"/>
+        <content type="html">&lt;h1 id=&#34;系统应用&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#系统应用&#34;&gt;#&lt;/a&gt; 系统应用&lt;/h1&gt;
+&lt;p&gt;&lt;div class=&#34;links&#34;&gt;&lt;div class=&#34;item&#34; title=&#34;Minecraft微软&#34; style=&#34;--block-color:#e9546b;&#34;&gt;&lt;span class=&#34;exturl image&#34; data-url=&#34;aHR0cHM6Ly93d3cubWljcm9zb2Z0LmNvbS96aC1jbi9zb2Z0d2FyZS1kb3dubG9hZC93aW5kb3dzMTA=&#34; data-background-image=&#34;https://s2.loli.net/2024/12/24/2uebYCHarLZV8l1.png&#34;&gt;&lt;/span&gt;
+          &lt;div class=&#34;info&#34;&gt;
+          &lt;span class=&#34;exturl title&#34; data-url=&#34;aHR0cHM6Ly93d3cubWljcm9zb2Z0LmNvbS96aC1jbi9zb2Z0d2FyZS1kb3dubG9hZC93aW5kb3dzMTA=&#34;&gt;Windows操作系统&lt;/span&gt;
+          &lt;p class=&#34;desc&#34;&gt;PC操作系统&lt;/p&gt;
+          &lt;/div&gt;&lt;/div&gt;&lt;div class=&#34;item&#34; title=&#34;Google谷歌&#34; style=&#34;--block-color:#e9546b;&#34;&gt;&lt;span class=&#34;exturl image&#34; data-url=&#34;aHR0cHM6Ly93d3cuZ29vZ2xlLmNuL2ludGwvemgtQ04vY2hyb21lLw==&#34; data-background-image=&#34;https://s2.loli.net/2024/12/24/5EbmxwvYti9oqXu.png&#34;&gt;&lt;/span&gt;
+          &lt;div class=&#34;info&#34;&gt;
+          &lt;span class=&#34;exturl title&#34; data-url=&#34;aHR0cHM6Ly93d3cuZ29vZ2xlLmNuL2ludGwvemgtQ04vY2hyb21lLw==&#34;&gt;Google Chrome浏览器&lt;/span&gt;
+          &lt;p class=&#34;desc&#34;&gt;PC浏览器&lt;/p&gt;
+          &lt;/div&gt;&lt;/div&gt;&lt;div class=&#34;item&#34; title=&#34;油叉脚本&#34; style=&#34;--block-color:#e9546b;&#34;&gt;&lt;span class=&#34;exturl image&#34; data-url=&#34;aHR0cHM6Ly9ncmVhc3lmb3JrLm9yZy96aC1DTi9zY3JpcHRz&#34; data-background-image=&#34;https://s2.loli.net/2024/12/24/ljyipxdzKJAQsIY.png&#34;&gt;&lt;/span&gt;
+          &lt;div class=&#34;info&#34;&gt;
+          &lt;span class=&#34;exturl title&#34; data-url=&#34;aHR0cHM6Ly9ncmVhc3lmb3JrLm9yZy96aC1DTi9zY3JpcHRz&#34;&gt;油叉脚本&lt;/span&gt;
+          &lt;p class=&#34;desc&#34;&gt;油猴脚本插件仓库&lt;/p&gt;
+          &lt;/div&gt;&lt;/div&gt;&lt;div class=&#34;item&#34; title=&#34;向日葵&#34; style=&#34;--block-color:#e9546b;&#34;&gt;&lt;span class=&#34;exturl image&#34; data-url=&#34;aHR0cHM6Ly9zdW5sb2dpbi5vcmF5LmNvbS9kb3dubG9hZD9jYXRlZz1wZXJzb25hbA==&#34; data-background-image=&#34;https://s2.loli.net/2024/12/24/ioMmGJVlgE6k7xT.png&#34;&gt;&lt;/span&gt;
+          &lt;div class=&#34;info&#34;&gt;
+          &lt;span class=&#34;exturl title&#34; data-url=&#34;aHR0cHM6Ly9zdW5sb2dpbi5vcmF5LmNvbS9kb3dubG9hZD9jYXRlZz1wZXJzb25hbA==&#34;&gt;向日葵远程控制&lt;/span&gt;
+          &lt;p class=&#34;desc&#34;&gt;远程控制软件&lt;/p&gt;
+          &lt;/div&gt;&lt;/div&gt;&lt;div class=&#34;item&#34; title=&#34;7zip&#34; style=&#34;--block-color:#e9546b;&#34;&gt;&lt;span class=&#34;exturl image&#34; data-url=&#34;aHR0cHM6Ly93d3cuNy16aXAub3JnLw==&#34; data-background-image=&#34;https://s2.loli.net/2024/12/24/hwSrDF3k7a2EMxu.png&#34;&gt;&lt;/span&gt;
+          &lt;div class=&#34;info&#34;&gt;
+          &lt;span class=&#34;exturl title&#34; data-url=&#34;aHR0cHM6Ly93d3cuNy16aXAub3JnLw==&#34;&gt;7-Zip&lt;/span&gt;
+          &lt;p class=&#34;desc&#34;&gt;PC文件压缩工具&lt;/p&gt;
+          &lt;/div&gt;&lt;/div&gt;&lt;div class=&#34;item&#34; title=&#34;WinRar压缩&#34; style=&#34;--block-color:#e9546b;&#34;&gt;&lt;span class=&#34;exturl image&#34; data-url=&#34;aHR0cHM6Ly93d3cud2lucmFyLmNvbS5jbi8=&#34; data-background-image=&#34;https://s2.loli.net/2024/12/24/e6UJ9MYfO4zq8wx.png&#34;&gt;&lt;/span&gt;
+          &lt;div class=&#34;info&#34;&gt;
+          &lt;span class=&#34;exturl title&#34; data-url=&#34;aHR0cHM6Ly93d3cud2lucmFyLmNvbS5jbi8=&#34;&gt;WinRar压缩&lt;/span&gt;
+          &lt;p class=&#34;desc&#34;&gt;PC文件压缩工具&lt;/p&gt;
+          &lt;/div&gt;&lt;/div&gt;&lt;div class=&#34;item&#34; title=&#34;Everything&#34; style=&#34;--block-color:#e9546b;&#34;&gt;&lt;span class=&#34;exturl image&#34; data-url=&#34;aHR0cHM6Ly93d3cudm9pZHRvb2xzLmNvbS96aC1jbi9kb3dubG9hZHMv&#34; data-background-image=&#34;https://s2.loli.net/2024/12/24/QjdMgxJUHPkAv4W.png&#34;&gt;&lt;/span&gt;
+          &lt;div class=&#34;info&#34;&gt;
+          &lt;span class=&#34;exturl title&#34; data-url=&#34;aHR0cHM6Ly93d3cudm9pZHRvb2xzLmNvbS96aC1jbi9kb3dubG9hZHMv&#34;&gt;Everything&lt;/span&gt;
+          &lt;p class=&#34;desc&#34;&gt;Windows文件搜索工具&lt;/p&gt;
+          &lt;/div&gt;&lt;/div&gt;&lt;div class=&#34;item&#34; title=&#34;Typora&#34; style=&#34;--block-color:#e9546b;&#34;&gt;&lt;span class=&#34;exturl image&#34; data-url=&#34;aHR0cHM6Ly90eXBvcmFpby5jbi8=&#34; data-background-image=&#34;https://s2.loli.net/2024/12/24/2qupI4Y9jNkUBWK.png&#34;&gt;&lt;/span&gt;
+          &lt;div class=&#34;info&#34;&gt;
+          &lt;span class=&#34;exturl title&#34; data-url=&#34;aHR0cHM6Ly90eXBvcmFpby5jbi8=&#34;&gt;Typora&lt;/span&gt;
+          &lt;p class=&#34;desc&#34;&gt;Markdown文本编辑器&lt;/p&gt;
+          &lt;/div&gt;&lt;/div&gt;&lt;div class=&#34;item&#34; title=&#34;koodo reader&#34; style=&#34;--block-color:#e9546b;&#34;&gt;&lt;span class=&#34;exturl image&#34; data-url=&#34;aHR0cHM6Ly9rb29kby45NjA5NjAueHl6L3po&#34; data-background-image=&#34;https://s2.loli.net/2024/12/24/G4rwp5dWbQof6tT.png&#34;&gt;&lt;/span&gt;
+          &lt;div class=&#34;info&#34;&gt;
+          &lt;span class=&#34;exturl title&#34; data-url=&#34;aHR0cHM6Ly9rb29kby45NjA5NjAueHl6L3po&#34;&gt;Koodo Reader&lt;/span&gt;
+          &lt;p class=&#34;desc&#34;&gt;PC文本阅读&lt;/p&gt;
+          &lt;/div&gt;&lt;/div&gt;&lt;div class=&#34;item&#34; title=&#34;Snipaste&#34; style=&#34;--block-color:#e9546b;&#34;&gt;&lt;span class=&#34;exturl image&#34; data-url=&#34;aHR0cHM6Ly93d3cuc25pcGFzdGUuY29tLw==&#34; data-background-image=&#34;https://s2.loli.net/2024/12/24/wn9ishgqRAFfPXT.png&#34;&gt;&lt;/span&gt;
+          &lt;div class=&#34;info&#34;&gt;
+          &lt;span class=&#34;exturl title&#34; data-url=&#34;aHR0cHM6Ly93d3cuc25pcGFzdGUuY29tLw==&#34;&gt;Snipaste截图&lt;/span&gt;
+          &lt;p class=&#34;desc&#34;&gt;Windows截图工具&lt;/p&gt;
+          &lt;/div&gt;&lt;/div&gt;&lt;div class=&#34;item&#34; title=&#34;PixPin&#34; style=&#34;--block-color:#e9546b;&#34;&gt;&lt;span class=&#34;exturl image&#34; data-url=&#34;aHR0cHM6Ly9waXhwaW5hcHAuY29tLw==&#34; data-background-image=&#34;https://s2.loli.net/2024/12/24/FNQAGoHjcquhitE.png&#34;&gt;&lt;/span&gt;
+          &lt;div class=&#34;info&#34;&gt;
+          &lt;span class=&#34;exturl title&#34; data-url=&#34;aHR0cHM6Ly9waXhwaW5hcHAuY29tLw==&#34;&gt;PixPin截图&lt;/span&gt;
+          &lt;p class=&#34;desc&#34;&gt;Windows截图工具&lt;/p&gt;
+          &lt;/div&gt;&lt;/div&gt;&lt;div class=&#34;item&#34; title=&#34;远程开机卡&#34; style=&#34;--block-color:#e9546b;&#34;&gt;&lt;span class=&#34;exturl image&#34; data-url=&#34;aHR0cHM6Ly93d3cuaXR6bi5jbi9kb3duL3BhZ2UucGhw&#34; data-background-image=&#34;https://s2.loli.net/2024/12/24/dIp3PAsSjDC2uZt.png&#34;&gt;&lt;/span&gt;
+          &lt;div class=&#34;info&#34;&gt;
+          &lt;span class=&#34;exturl title&#34; data-url=&#34;aHR0cHM6Ly93d3cuaXR6bi5jbi9kb3duL3BhZ2UucGhw&#34;&gt;远程开机卡&lt;/span&gt;
+          &lt;p class=&#34;desc&#34;&gt;系统工具&lt;/p&gt;
+          &lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/p&gt;
+&lt;h1 id=&#34;硬件驱动&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#硬件驱动&#34;&gt;#&lt;/a&gt; 硬件驱动&lt;/h1&gt;
+&lt;p&gt;&lt;div class=&#34;links&#34;&gt;&lt;div class=&#34;item&#34; title=&#34;Colorful七彩虹&#34; style=&#34;--block-color:#e9546b;&#34;&gt;&lt;span class=&#34;exturl image&#34; data-url=&#34;aHR0cHM6Ly93d3cuY29sb3JmdWwuY24vaUdhbWVDZW50ZXIvI2ZpcnN0UGFnZQ==&#34; data-background-image=&#34;https://s2.loli.net/2024/12/24/2uebYCHarLZV8l1.png&#34;&gt;&lt;/span&gt;
+          &lt;div class=&#34;info&#34;&gt;
+          &lt;span class=&#34;exturl title&#34; data-url=&#34;aHR0cHM6Ly93d3cuY29sb3JmdWwuY24vaUdhbWVDZW50ZXIvI2ZpcnN0UGFnZQ==&#34;&gt;iGameCenter&lt;/span&gt;
+          &lt;p class=&#34;desc&#34;&gt;七彩虹硬件驱动&lt;/p&gt;
+          &lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/p&gt;
+</content>
+        <category term="资源" />
+        <category term="系统工具" />
+        <category term="应用软件" />
+        <updated>2025-05-20T09:13:17.969Z</updated>
+    </entry>
+</feed>

@@ -1,0 +1,180 @@
+<?xml version="1.0"?>
+<rss version="2.0">
+    <channel>
+        <title>余年的个人空间 • Posts by &#34;软件教程&#34; category</title>
+        <link>https://yunian.site</link>
+        <description>学习笔记和随笔记录</description>
+        <language>zh-CN</language>
+        <pubDate>Tue, 20 May 2025 17:13:17 +0800</pubDate>
+        <lastBuildDate>Tue, 20 May 2025 17:13:17 +0800</lastBuildDate>
+        <category>个人博客</category>
+        <category>Hexo</category>
+        <category>Shoka主题</category>
+        <category>Markdown</category>
+        <category>Shoka</category>
+        <category>开发工具</category>
+        <category>Python</category>
+        <category>数据库</category>
+        <category>服务器运维</category>
+        <category>git</category>
+        <category>图床</category>
+        <category>图库</category>
+        <category>公开课</category>
+        <category>图书</category>
+        <category>论文</category>
+        <category>资源</category>
+        <category>系统工具</category>
+        <category>应用软件</category>
+        <category>图片</category>
+        <category>图标</category>
+        <category>字体</category>
+        <category>音效</category>
+        <category>素材</category>
+        <category>视频后期</category>
+        <category>开发笔记</category>
+        <category>Pycharm</category>
+        <category>Anaconda</category>
+        <category>Mysql</category>
+        <category>SQL</category>
+        <category>Word</category>
+        <category>空白页</category>
+        <category>linux</category>
+        <category>Excel</category>
+        <category>软件使用</category>
+        <category>Windows</category>
+        <item>
+            <guid isPermalink="true">https://yunian.site/Tutorials/Windows/%E7%B3%BB%E7%BB%9F%E4%BD%BF%E7%94%A8/</guid>
+            <title>Windows优化</title>
+            <link>https://yunian.site/Tutorials/Windows/%E7%B3%BB%E7%BB%9F%E4%BD%BF%E7%94%A8/</link>
+            <category>软件使用</category>
+            <category>Windows</category>
+            <pubDate>Tue, 20 May 2025 17:13:17 +0800</pubDate>
+            <description><![CDATA[ &lt;h2 id=&#34;彻底删除启动项&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#彻底删除启动项&#34;&gt;#&lt;/a&gt; 彻底删除启动项&lt;/h2&gt;
+&lt;p&gt;对电脑中开机自启动的程序进行管理，可以减少不必要的资源性能占用。在 &lt;code&gt;任务管理器&lt;/code&gt; 中，选择 &lt;code&gt;启动&lt;/code&gt; 一栏，可以看到自启动程序列表，每个程序的 &lt;code&gt;命令行&lt;/code&gt; 则可以看到其自启动文件的所在目录。&lt;/p&gt;
+&lt;p&gt;之前清理启动项时，有一个 &lt;code&gt;program&lt;/code&gt;  启动项不确定是什么程序，因此百度了一番，确定了它是 &lt;code&gt;微软Teams&lt;/code&gt;  程序的残留，然后发现了不需要的启动项都可以通过删除文件及其注册表项的方法彻底禁用，这个方法可以将流氓程序彻底卸载而不用担心死灰复燃。&lt;/p&gt;
+&lt;p&gt;具体操作方法为：根据启动项中程序的 &lt;code&gt;命令行&lt;/code&gt; 信息，首先找到自启动文件的目录，将其全部删除，再通过 &lt;code&gt;Windows&lt;/code&gt;  和 &lt;code&gt;R&lt;/code&gt;  的快捷键打开 &lt;code&gt;运行&lt;/code&gt; 窗口，输入 &lt;code&gt;regedit&lt;/code&gt;  打开 &lt;code&gt;注册表编辑器&lt;/code&gt; ，检查下面启动项相关的三个地方的注册表信息：&lt;/p&gt;
+&lt;p&gt;&lt;figure class=&#34;highlight bash&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;计算机\HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\Run&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;计算机\HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Run&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;计算机\HKEY_LOCAL_MACHINE\SOFTWARE\WOW6432Node\Microsoft\Windows\CurrentVersion\Run&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/p&gt;
+&lt;p&gt;找到 &lt;code&gt;自启动程序&lt;/code&gt; 命令行所对应的注册表信息，右键选择将其删除即可。&lt;/p&gt;
+&lt;h2 id=&#34;窗口移动到屏幕外无法操作&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#窗口移动到屏幕外无法操作&#34;&gt;#&lt;/a&gt; 窗口移动到屏幕外无法操作&lt;/h2&gt;
+&lt;p&gt;有些窗口拖动到了屏幕外导致无法用鼠标再操作移动，此时可以通过键盘将窗口移回屏幕内。&lt;/p&gt;
+&lt;p&gt;首先用 &lt;code&gt;alt&lt;/code&gt;  和 &lt;code&gt;tab&lt;/code&gt;  快捷键切换到需要移动的窗口，再用 &lt;code&gt;alt&lt;/code&gt;  和 &lt;code&gt;space空格&lt;/code&gt; 快捷键激活窗口操作菜单， &lt;code&gt;鼠标左键&lt;/code&gt; 单击菜单中的 &lt;code&gt;移动&lt;/code&gt; 一项，将窗口拉长一部分到屏幕内，或者按 &lt;code&gt;M&lt;/code&gt;  键再使用方向键上下移动窗口到屏幕内，即可重新操作窗口。&lt;/p&gt;
+&lt;h2 id=&#34;google浏览器使用edge浏览器插件&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#google浏览器使用edge浏览器插件&#34;&gt;#&lt;/a&gt; Google 浏览器使用 Edge 浏览器插件&lt;/h2&gt;
+&lt;p&gt;Google 浏览器的扩展商店需要魔法才能访问，但是在开发者模式下可以加载已下载的插件，所以可以先通过系统自带的 Edge 浏览器扩展商店下载需要的插件，再在 Google 浏览器中加载即可使用。&lt;/p&gt;
+&lt;p&gt;Google 浏览器扩展管理进入开发者模式及加载已下载插件方法：&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;点击右上角竖着的三个点，点击 &lt;code&gt;扩展程序&lt;/code&gt; ，选择 &lt;code&gt;管理扩展程序&lt;/code&gt; 。&lt;/li&gt;
+&lt;li&gt;在 &lt;code&gt;扩展程序&lt;/code&gt; 页面右上角有 &lt;code&gt;开发者模式&lt;/code&gt; 字样，点击文字边的按钮即可进入 &lt;code&gt;开发者模式&lt;/code&gt; 。&lt;/li&gt;
+&lt;li&gt;点击弹出的 &lt;code&gt;加载已解压的扩展程序&lt;/code&gt; ，在弹出的 &lt;code&gt;文件管理器&lt;/code&gt; 中进入解压后的插件文件夹后，点击 &lt;code&gt;文件管理器&lt;/code&gt; 下方的 &lt;code&gt;选择文件夹&lt;/code&gt; 即可加载对应扩展。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Edge 浏览器插件文件夹的默认位置： &lt;code&gt;C:\Users\用户名\AppData\Local\Microsoft\Edge\User Data\Default\Extensions\&lt;/code&gt; ，插件文件夹名称为乱码，可以根据文件夹的 &lt;code&gt;修改时间&lt;/code&gt; 和进入文件夹内显示的插件 &lt;code&gt;版本号&lt;/code&gt; 等信息确认具体为哪个插件。&lt;/p&gt;
+ ]]></description>
+        </item>
+        <item>
+            <guid isPermalink="true">https://yunian.site/Tutorials/VScode/VScode%E5%BF%AB%E6%8D%B7%E4%BB%BB%E5%8A%A1%E9%85%8D%E7%BD%AE/</guid>
+            <title>VScode快捷任务配置</title>
+            <link>https://yunian.site/Tutorials/VScode/VScode%E5%BF%AB%E6%8D%B7%E4%BB%BB%E5%8A%A1%E9%85%8D%E7%BD%AE/</link>
+            <pubDate>Tue, 20 May 2025 17:13:17 +0800</pubDate>
+            <description><![CDATA[ &lt;h1 id=&#34;vscode快捷任务配置&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#vscode快捷任务配置&#34;&gt;#&lt;/a&gt; VSCode 快捷任务配置&lt;/h1&gt;
+&lt;p&gt;在写个人博客时，会频繁在终端使用 &lt;code&gt;Hexo&lt;/code&gt;  命令和 &lt;code&gt;git&lt;/code&gt;  命令等，手动输入比较麻烦，因此，可以通过 VScode 配置 &lt;code&gt;task任务&lt;/code&gt; 的形式将常用的命令操作简化，这种方法还可以将博客源文件快捷推送到 &lt;code&gt;github&lt;/code&gt; 、 &lt;code&gt;gitee&lt;/code&gt;  等远程仓库上，实现手动备份，而无需复杂的 &lt;code&gt;workflow&lt;/code&gt;  自动化配置。&lt;/p&gt;
+&lt;p&gt;VScode 中 &lt;code&gt;task任务&lt;/code&gt; 有许多属性，可以自行百度了解，此处用到的主要属性及语义如下：&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;属性&lt;/th&gt;
+&lt;th&gt;语义&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;label&lt;/td&gt;
+&lt;td&gt;任务名称&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;type&lt;/td&gt;
+&lt;td&gt;任务类型，分为 &lt;code&gt;shell&lt;/code&gt;  和 &lt;code&gt;process&lt;/code&gt;  两种，安装插件也可以支持其他类型&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;command&lt;/td&gt;
+&lt;td&gt;需要执行的命令，包括 shell 命令或者外部程序命令&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;options&lt;/td&gt;
+&lt;td&gt;配置 cwd（当前工作目录）、env（环境变量）和 shell 的值&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;首先，打开博客目录所在工作区，在 &lt;code&gt;.vscode&lt;/code&gt;  文件夹下创建一个 &lt;code&gt;tasks.json&lt;/code&gt;  名称的文件，向其中写入以下内容：&lt;/p&gt;
+&lt;p&gt;&lt;figure class=&#34;highlight json&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;10&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;11&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;12&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;13&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;14&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;15&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;16&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;17&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;18&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;19&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;20&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;21&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;22&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;23&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;24&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;25&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;26&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;27&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;28&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;29&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;30&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;31&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;32&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;33&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;34&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;punctuation&#34;&gt;&amp;#123;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &lt;span class=&#34;comment&#34;&gt;// See https://go.microsoft.com/fwlink/?LinkId=733558&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &lt;span class=&#34;comment&#34;&gt;// for the documentation about the tasks.json format&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &lt;span class=&#34;attr&#34;&gt;&amp;quot;version&amp;quot;&lt;/span&gt;&lt;span class=&#34;punctuation&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;string&#34;&gt;&amp;quot;2.0.0&amp;quot;&lt;/span&gt;&lt;span class=&#34;punctuation&#34;&gt;,&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &lt;span class=&#34;attr&#34;&gt;&amp;quot;tasks&amp;quot;&lt;/span&gt;&lt;span class=&#34;punctuation&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;punctuation&#34;&gt;[&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        &lt;span class=&#34;comment&#34;&gt;// 本地启动博客&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        &lt;span class=&#34;punctuation&#34;&gt;&amp;#123;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;            &lt;span class=&#34;attr&#34;&gt;&amp;quot;label&amp;quot;&lt;/span&gt;&lt;span class=&#34;punctuation&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;string&#34;&gt;&amp;quot;本地启动&amp;quot;&lt;/span&gt;&lt;span class=&#34;punctuation&#34;&gt;,&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;            &lt;span class=&#34;attr&#34;&gt;&amp;quot;type&amp;quot;&lt;/span&gt;&lt;span class=&#34;punctuation&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;string&#34;&gt;&amp;quot;shell&amp;quot;&lt;/span&gt;&lt;span class=&#34;punctuation&#34;&gt;,&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;            &lt;span class=&#34;attr&#34;&gt;&amp;quot;command&amp;quot;&lt;/span&gt;&lt;span class=&#34;punctuation&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;string&#34;&gt;&amp;quot;hexo cl &amp;amp;&amp;amp; hexo g &amp;amp;&amp;amp; hexo s&amp;quot;&lt;/span&gt;&lt;span class=&#34;punctuation&#34;&gt;,&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;            &lt;span class=&#34;attr&#34;&gt;&amp;quot;options&amp;quot;&lt;/span&gt;&lt;span class=&#34;punctuation&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;punctuation&#34;&gt;&amp;#123;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;                &lt;span class=&#34;attr&#34;&gt;&amp;quot;cwd&amp;quot;&lt;/span&gt;&lt;span class=&#34;punctuation&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;string&#34;&gt;&amp;quot;$&amp;#123;workspaceFolder&amp;#125;/MyBlog&amp;quot;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;            &lt;span class=&#34;punctuation&#34;&gt;&amp;#125;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        &lt;span class=&#34;punctuation&#34;&gt;&amp;#125;&lt;/span&gt;&lt;span class=&#34;punctuation&#34;&gt;,&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        &lt;span class=&#34;comment&#34;&gt;// 博客发布到gitee、github&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        &lt;span class=&#34;punctuation&#34;&gt;&amp;#123;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;            &lt;span class=&#34;attr&#34;&gt;&amp;quot;label&amp;quot;&lt;/span&gt;&lt;span class=&#34;punctuation&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;string&#34;&gt;&amp;quot;发布博客&amp;quot;&lt;/span&gt;&lt;span class=&#34;punctuation&#34;&gt;,&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;            &lt;span class=&#34;attr&#34;&gt;&amp;quot;type&amp;quot;&lt;/span&gt;&lt;span class=&#34;punctuation&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;string&#34;&gt;&amp;quot;shell&amp;quot;&lt;/span&gt;&lt;span class=&#34;punctuation&#34;&gt;,&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;            &lt;span class=&#34;attr&#34;&gt;&amp;quot;command&amp;quot;&lt;/span&gt;&lt;span class=&#34;punctuation&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;string&#34;&gt;&amp;quot;hexo deploy&amp;quot;&lt;/span&gt;&lt;span class=&#34;punctuation&#34;&gt;,&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;            &lt;span class=&#34;attr&#34;&gt;&amp;quot;options&amp;quot;&lt;/span&gt;&lt;span class=&#34;punctuation&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;punctuation&#34;&gt;&amp;#123;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;                &lt;span class=&#34;attr&#34;&gt;&amp;quot;cwd&amp;quot;&lt;/span&gt;&lt;span class=&#34;punctuation&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;string&#34;&gt;&amp;quot;$&amp;#123;workspaceFolder&amp;#125;/MyBlog&amp;quot;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;            &lt;span class=&#34;punctuation&#34;&gt;&amp;#125;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        &lt;span class=&#34;punctuation&#34;&gt;&amp;#125;&lt;/span&gt;&lt;span class=&#34;punctuation&#34;&gt;,&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        &lt;span class=&#34;comment&#34;&gt;// 博客源文件备份到github&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        &lt;span class=&#34;punctuation&#34;&gt;&amp;#123;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;            &lt;span class=&#34;attr&#34;&gt;&amp;quot;label&amp;quot;&lt;/span&gt;&lt;span class=&#34;punctuation&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;string&#34;&gt;&amp;quot;博客备份&amp;quot;&lt;/span&gt;&lt;span class=&#34;punctuation&#34;&gt;,&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;            &lt;span class=&#34;attr&#34;&gt;&amp;quot;type&amp;quot;&lt;/span&gt;&lt;span class=&#34;punctuation&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;string&#34;&gt;&amp;quot;shell&amp;quot;&lt;/span&gt;&lt;span class=&#34;punctuation&#34;&gt;,&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;            &lt;span class=&#34;attr&#34;&gt;&amp;quot;command&amp;quot;&lt;/span&gt;&lt;span class=&#34;punctuation&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;string&#34;&gt;&amp;quot;git add . &amp;amp;&amp;amp; git commit -am \&amp;quot;博客源文件备份\&amp;quot; &amp;amp;&amp;amp; git push github main&amp;quot;&lt;/span&gt;&lt;span class=&#34;punctuation&#34;&gt;,&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;            &lt;span class=&#34;attr&#34;&gt;&amp;quot;options&amp;quot;&lt;/span&gt;&lt;span class=&#34;punctuation&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;punctuation&#34;&gt;&amp;#123;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;                &lt;span class=&#34;attr&#34;&gt;&amp;quot;cwd&amp;quot;&lt;/span&gt;&lt;span class=&#34;punctuation&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;string&#34;&gt;&amp;quot;$&amp;#123;workspaceFolder&amp;#125;/MyBlog&amp;quot;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;            &lt;span class=&#34;punctuation&#34;&gt;&amp;#125;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        &lt;span class=&#34;punctuation&#34;&gt;&amp;#125;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &lt;span class=&#34;punctuation&#34;&gt;]&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;punctuation&#34;&gt;&amp;#125;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/p&gt;
+&lt;p&gt;复制上述任务配置内容后，需要注意 &lt;code&gt;cwd&lt;/code&gt;  属性中的任务工作目录配置， &lt;code&gt;$&amp;#123;workspaceFolder&amp;#125;&lt;/code&gt;  表示工作区根目录， &lt;code&gt;MyBlog&lt;/code&gt;  则是个人博客文件夹的名称，组合起来就是任务运行时的工作路径，所以使用前要根据具体的博客文件夹的路径来替换这里的内容。另外在 &lt;code&gt;博客备份&lt;/code&gt; 任务配置的 &lt;code&gt;command&lt;/code&gt;  命令中， &lt;code&gt;github&lt;/code&gt;  是本地仓库绑定的远程备份仓库名称， &lt;code&gt;main&lt;/code&gt;  是分支名称，根据需要更改。&lt;/p&gt;
+&lt;p&gt;任务配置完成后，可以在 VScode 左上角的 &lt;code&gt;工具栏&lt;/code&gt; 中点击 &lt;code&gt;终端&lt;/code&gt; ，选择 &lt;code&gt;运行任务&lt;/code&gt; ，即可看到已配置好的任务，点击任务名称即可执行相应命令操作。&lt;/p&gt;
+&lt;h1 id=&#34;task任务绑定快捷键&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#task任务绑定快捷键&#34;&gt;#&lt;/a&gt; task 任务绑定快捷键&lt;/h1&gt;
+&lt;p&gt;为 task 任务绑定相应的快捷键可以更方便的操作。在 VScode 上方搜索栏中输入 &lt;code&gt;keybindings.json&lt;/code&gt; , 可以在文件内容的末尾添加以下内容：&lt;/p&gt;
+&lt;p&gt;&lt;figure class=&#34;highlight json&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;10&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;11&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;12&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;13&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;14&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;15&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;punctuation&#34;&gt;&amp;#123;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &lt;span class=&#34;attr&#34;&gt;&amp;quot;key&amp;quot;&lt;/span&gt;&lt;span class=&#34;punctuation&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;string&#34;&gt;&amp;quot;alt+s&amp;quot;&lt;/span&gt;&lt;span class=&#34;punctuation&#34;&gt;,&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &lt;span class=&#34;attr&#34;&gt;&amp;quot;command&amp;quot;&lt;/span&gt;&lt;span class=&#34;punctuation&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;string&#34;&gt;&amp;quot;workbench.action.tasks.runTask&amp;quot;&lt;/span&gt;&lt;span class=&#34;punctuation&#34;&gt;,&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &lt;span class=&#34;attr&#34;&gt;&amp;quot;args&amp;quot;&lt;/span&gt;&lt;span class=&#34;punctuation&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;string&#34;&gt;&amp;quot;本地启动&amp;quot;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;punctuation&#34;&gt;&amp;#125;&lt;/span&gt;&lt;span class=&#34;punctuation&#34;&gt;,&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;punctuation&#34;&gt;&amp;#123;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &lt;span class=&#34;attr&#34;&gt;&amp;quot;key&amp;quot;&lt;/span&gt;&lt;span class=&#34;punctuation&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;string&#34;&gt;&amp;quot;alt+d&amp;quot;&lt;/span&gt;&lt;span class=&#34;punctuation&#34;&gt;,&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &lt;span class=&#34;attr&#34;&gt;&amp;quot;command&amp;quot;&lt;/span&gt;&lt;span class=&#34;punctuation&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;string&#34;&gt;&amp;quot;workbench.action.tasks.runTask&amp;quot;&lt;/span&gt;&lt;span class=&#34;punctuation&#34;&gt;,&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &lt;span class=&#34;attr&#34;&gt;&amp;quot;args&amp;quot;&lt;/span&gt;&lt;span class=&#34;punctuation&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;string&#34;&gt;&amp;quot;发布博客&amp;quot;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;punctuation&#34;&gt;&amp;#125;&lt;/span&gt;&lt;span class=&#34;punctuation&#34;&gt;,&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;punctuation&#34;&gt;&amp;#123;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &lt;span class=&#34;attr&#34;&gt;&amp;quot;key&amp;quot;&lt;/span&gt;&lt;span class=&#34;punctuation&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;string&#34;&gt;&amp;quot;alt+b&amp;quot;&lt;/span&gt;&lt;span class=&#34;punctuation&#34;&gt;,&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &lt;span class=&#34;attr&#34;&gt;&amp;quot;command&amp;quot;&lt;/span&gt;&lt;span class=&#34;punctuation&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;string&#34;&gt;&amp;quot;workbench.action.tasks.runTask&amp;quot;&lt;/span&gt;&lt;span class=&#34;punctuation&#34;&gt;,&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &lt;span class=&#34;attr&#34;&gt;&amp;quot;args&amp;quot;&lt;/span&gt;&lt;span class=&#34;punctuation&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;string&#34;&gt;&amp;quot;博客备份&amp;quot;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;punctuation&#34;&gt;&amp;#125;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/p&gt;
+&lt;p&gt;其中 &lt;code&gt;key&lt;/code&gt;  属性代表所绑定的快捷键； &lt;code&gt;command&lt;/code&gt;  属性为快捷键执行的命令类型，不要更改； &lt;code&gt;args&lt;/code&gt;  属性则是快捷键执行参数，此处即对应的任务名称 &lt;code&gt;label&lt;/code&gt; 。&lt;/p&gt;
+&lt;p&gt;注意，要将内容添加在文件默认的 &lt;code&gt;[]&lt;/code&gt;  内，另外多个快捷键绑定内容间要以英文逗号间隔，最后一个快捷键绑定内容后面则无需逗号。&lt;/p&gt;
+&lt;p&gt;除了通过快捷键快速运行任务以外，还可以在 VScode 扩展商店中搜索 &lt;code&gt;tasks&lt;/code&gt;  安装扩展插件，该插件会将配置好的任务显示在 VScode 下方的状态栏中，点击即可一键使用。如果任务过多，可以查看点击安装的 task 扩展查看说明，隐藏一部分任务。&lt;/p&gt;
+ ]]></description>
+        </item>
+        <item>
+            <guid isPermalink="true">https://yunian.site/Tutorials/Office/Word%E6%96%87%E6%A1%A3-%E9%97%AE%E9%A2%98%E5%A4%84%E7%90%86/</guid>
+            <title>Word文档-问题处理</title>
+            <link>https://yunian.site/Tutorials/Office/Word%E6%96%87%E6%A1%A3-%E9%97%AE%E9%A2%98%E5%A4%84%E7%90%86/</link>
+            <category>Word</category>
+            <category>空白页</category>
+            <pubDate>Tue, 20 May 2025 17:13:17 +0800</pubDate>
+            <description><![CDATA[ &lt;h1 id=&#34;word文档-问题处理&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#word文档-问题处理&#34;&gt;#&lt;/a&gt; Word 文档 - 问题处理&lt;/h1&gt;
+&lt;h2 id=&#34;删除空白页&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#删除空白页&#34;&gt;#&lt;/a&gt; 删除空白页&lt;/h2&gt;
+&lt;p&gt;  出现空白页的原因有很多，有些是多余的 &lt;code&gt;【空行】&lt;/code&gt; 造成的， &lt;code&gt;【Backspace】&lt;/code&gt; 或 &lt;code&gt;【Delete】&lt;/code&gt; 键删除不必要的空行，再进行简单排版即可。也可以用 &lt;code&gt;【shift】&lt;/code&gt; + &lt;code&gt;【鼠标左键】&lt;/code&gt; 选中整页内容将其删除。这是最简单的情况。&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;分节符造成&lt;br /&gt;
+  有时候使用 &lt;code&gt;【分节符】&lt;/code&gt; 也会产生空白页，此时无法直接删除空白页，需要先删除分节符：&lt;br /&gt;
+  在 &lt;code&gt;【Office Word】&lt;/code&gt; 中，将视图切换为 &lt;code&gt;【草稿】&lt;/code&gt; 后，可以看到 &lt;code&gt;【分节符】&lt;/code&gt; 所产生的虚线，使用 &lt;code&gt;【Ctrl】&lt;/code&gt; + &lt;code&gt;【鼠标左键】&lt;/code&gt; 选中该行虚线，即可选中分节符将其删除。&lt;br /&gt;
+   &lt;code&gt;【WPS文字】&lt;/code&gt; 不能切换视图为草稿，此时可以通过 &lt;code&gt;【查找替换】&lt;/code&gt; 功能 ( &lt;code&gt;【Ctrl】&lt;/code&gt; + &lt;code&gt;【F/H】&lt;/code&gt; )，可以找到文本中的分节符，将其替换 &lt;code&gt;【空格】&lt;/code&gt; 后，进而删除空白页。这个方法也可用于两个软件中多个空白页的删除。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;英文直引号变成中文弯引号问题&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#英文直引号变成中文弯引号问题&#34;&gt;#&lt;/a&gt; 英文直引号变成中文弯引号问题&lt;/h2&gt;
+&lt;p&gt;  这是文本校对设置导致的问题。&lt;br /&gt;
+  WPS 文字中，在 &lt;code&gt;【文件】&lt;/code&gt; -&amp;gt; &lt;code&gt;【选项】&lt;/code&gt; -&amp;gt; &lt;code&gt;【编辑】&lt;/code&gt; -&amp;gt; &lt;code&gt;【自动更正】&lt;/code&gt; 即可找到 &lt;code&gt;【直引号替换为弯引号】&lt;/code&gt; 设置，取消勾选并确认设置即可。WPS 文字默认不勾选该项。&lt;br /&gt;
+  而 Office Word 中，在 &lt;code&gt;【文件】&lt;/code&gt; -&amp;gt; &lt;code&gt;【更多】&lt;/code&gt; -&amp;gt; &lt;code&gt;【选项】&lt;/code&gt; -&amp;gt; &lt;code&gt;【校对】&lt;/code&gt; -&amp;gt; &lt;code&gt;【自动更正选项】&lt;/code&gt; -&amp;gt; &lt;code&gt;【键入时自动套用格式】&lt;/code&gt; 找到该选项并取消勾选，之后都点击确认即可完成设置。Office 默认勾选该项。&lt;/p&gt;
+&lt;h2 id=&#34;取消自动编号&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#取消自动编号&#34;&gt;#&lt;/a&gt; 取消自动编号&lt;/h2&gt;
+&lt;p&gt;  新使用的 Office Word 或者 WPS 文字往往开启了自动编号功能，在书写上一项后，按下 &lt;code&gt;【Enter】&lt;/code&gt; 回车即可生成下一项的序号。虽然自动编号有时候能方便书写，但自动编号的格式经常会引起排版不协调的问题，因此，建议关闭这个功能，手动编号。&lt;br /&gt;
+  Office Word 中，在 &lt;code&gt;【文件】&lt;/code&gt; -&amp;gt; &lt;code&gt;【更多】&lt;/code&gt; -&amp;gt; &lt;code&gt;【选项】&lt;/code&gt; -&amp;gt; &lt;code&gt;【校对】&lt;/code&gt; -&amp;gt; &lt;code&gt;【自动更正选项】&lt;/code&gt; -&amp;gt; &lt;code&gt;【键入时自动套用格式】&lt;/code&gt; 找到 &lt;code&gt;【自动编号列表】&lt;/code&gt; 设置，取消勾选即可。&lt;br /&gt;
+WPS 文字中，在在 &lt;code&gt;【文件】&lt;/code&gt; -&amp;gt; &lt;code&gt;【选项】&lt;/code&gt; -&amp;gt; &lt;code&gt;【编辑】&lt;/code&gt; -&amp;gt; &lt;code&gt;【自动更正】&lt;/code&gt; 即可找到 &lt;code&gt;【键入时自动应用自动编号列表】&lt;/code&gt; 设置，取消勾选。&lt;/p&gt;
+&lt;h2 id=&#34;公式显示问题&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#公式显示问题&#34;&gt;#&lt;/a&gt; 公式显示问题&lt;/h2&gt;
+&lt;p&gt;  因为公式的行高一般并不与文字相同，尤其是使用了多元数学符号的公式，那么在全文设置 &lt;code&gt;【行距】&lt;/code&gt; 为 &lt;code&gt;【固定值】&lt;/code&gt; 时，公式就有可能无法正常显示，此时，选中公式这一行，单独将其 &lt;code&gt;【行距】&lt;/code&gt; 修改为 &lt;code&gt;【单倍行距】&lt;/code&gt; , 公式行就会以自适应的行高进行显示。&lt;/p&gt;
+&lt;h2 id=&#34;图片变形或隐藏问题&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#图片变形或隐藏问题&#34;&gt;#&lt;/a&gt; 图片变形或隐藏问题&lt;/h2&gt;
+&lt;p&gt;  图片显示问题通常是由于图片的文字环绕方式设置与 &lt;code&gt;【固定值】&lt;/code&gt; 行距的设置冲突。&lt;br /&gt;
+  一般来说，图片插入后的默认文字环绕方式为嵌入式，图片占据一行进行显示，若此时行距设置为固定值，图片也只能在一行的固定高度下进行显示，所以就造成了图片变形，或者被隐藏而无法显示的问题。&lt;br /&gt;
+  通常将图片所占行的行距设置为单倍行距后即可正常缩放显示。&lt;br /&gt;
+  将图片的文字环绕方式修改为其他的类型，再通过文字的排版也可以让图片正常显示，但是该方法很可能会让文件由于文字显示区域大小的不同，导致在不同的显示器上，图片显示位置发生偏移或者遮盖住文字的情况。&lt;/p&gt;
+ ]]></description>
+        </item>
+        <item>
+            <guid isPermalink="true">https://yunian.site/Tutorials/Office/Word%E6%96%87%E6%A1%A3-%E5%9F%BA%E7%A1%80%E4%BD%BF%E7%94%A8/</guid>
+            <title>Word文档-基础使用</title>
+            <link>https://yunian.site/Tutorials/Office/Word%E6%96%87%E6%A1%A3-%E5%9F%BA%E7%A1%80%E4%BD%BF%E7%94%A8/</link>
+            <category>Word</category>
+            <pubDate>Tue, 20 May 2025 17:13:17 +0800</pubDate>
+            <description><![CDATA[ &lt;h1 id=&#34;word文档-基础使用&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#word文档-基础使用&#34;&gt;#&lt;/a&gt; Word 文档 - 基础使用&lt;/h1&gt;
+&lt;h2 id=&#34;标题的目录大纲级别&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#标题的目录大纲级别&#34;&gt;#&lt;/a&gt; 标题的目录 (大纲) 级别&lt;/h2&gt;
+&lt;p&gt;  目录能够让文档的结构和主题一目了然，让阅读者更快了解文档的内容和找到所需内容的位置。Word 和 WPS 文字中都有自动生成目录的功能。但在生成目录之前，需要做的准备工作就是对文档中的多级标题设置其在目录 (大纲) 中的显示级别，这样自动生成的目录就会拥有分级效果。&lt;/p&gt;
+&lt;h2 id=&#34;定义常用字体&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#定义常用字体&#34;&gt;#&lt;/a&gt; 定义常用字体&lt;/h2&gt;
+&lt;p&gt;  在 Office Word 中，可以为常用字体指定快捷键，方便迅速切换字体。在 &lt;code&gt;【文件】&lt;/code&gt; -&amp;gt; &lt;code&gt;【更多】&lt;/code&gt; -&amp;gt; &lt;code&gt;【选项】&lt;/code&gt; -&amp;gt; &lt;code&gt;【自定义功能区】&lt;/code&gt; -&amp;gt; &lt;code&gt;【自定义】&lt;/code&gt; 功能列表的最下方找到 &lt;code&gt;【宏-字体】&lt;/code&gt; 设置，之后在右侧选择想要设置快捷键的字体，为其指定新的快捷键即可，推荐使用 &lt;code&gt;【Alt+字母】&lt;/code&gt; 的形式，可以避免大多数的热键冲突。&lt;/p&gt;
+ ]]></description>
+        </item>
+        <item>
+            <guid isPermalink="true">https://yunian.site/Tutorials/Office/Excel%E8%A1%A8%E6%A0%BC-%E5%9F%BA%E7%A1%80%E4%BD%BF%E7%94%A8/</guid>
+            <title>Excel表格-基础使用</title>
+            <link>https://yunian.site/Tutorials/Office/Excel%E8%A1%A8%E6%A0%BC-%E5%9F%BA%E7%A1%80%E4%BD%BF%E7%94%A8/</link>
+            <category>Excel</category>
+            <pubDate>Tue, 20 May 2025 17:13:17 +0800</pubDate>
+            <description><![CDATA[ &lt;h1 id=&#34;excel表格-基础使用&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#excel表格-基础使用&#34;&gt;#&lt;/a&gt; Excel 表格 - 基础使用&lt;/h1&gt;
+&lt;h2 id=&#34;设置表格外部空白&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#设置表格外部空白&#34;&gt;#&lt;/a&gt; 设置表格外部空白&lt;/h2&gt;
+&lt;p&gt;有时候出于显示或者打印的要求，会将表格的外部区域设置为空白，即只保留表格的边界和内部框线，而表外不显示任何框线。&lt;/p&gt;
+&lt;p&gt;实现该效果其实也很简单，只要将表格的框线根据需求设置好，在菜单区找到 &lt;code&gt;视图&lt;/code&gt; ，取消勾选 &lt;code&gt;网格线&lt;/code&gt; 即可。&lt;/p&gt;
+&lt;h2 id=&#34;序号填充&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#序号填充&#34;&gt;#&lt;/a&gt; 序号填充&lt;/h2&gt;
+&lt;p&gt;手动编写的序号在某些行删除或者新增后，无法自动更新序号，此时可以在序号列中使用 &lt;code&gt;RAW()&lt;/code&gt;  函数根据行号设置序号。&lt;/p&gt;
+&lt;p&gt;单元格中的 &lt;code&gt;RAW()&lt;/code&gt;  函数可以获取单元格所在行的行号，并且可以参与公式运算，所以通常将行号值减去表头所占行数即可得到一个递增的顺序序列，此方法生成的序号会随着单元格所在行号的变化而自动调整。&lt;/p&gt;
+ ]]></description>
+        </item>
+    </channel>
+</rss>

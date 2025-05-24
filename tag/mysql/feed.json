@@ -1,0 +1,20 @@
+{
+    "version": "https://jsonfeed.org/version/1",
+    "title": "余年的个人空间 • All posts by \"mysql\" tag",
+    "description": "学习笔记和随笔记录",
+    "home_page_url": "https://yunian.site",
+    "items": [
+        {
+            "id": "https://yunian.site/Note/Database/Mysql%E5%91%BD%E4%BB%A4%E9%80%9F%E6%9F%A5/",
+            "url": "https://yunian.site/Note/Database/Mysql%E5%91%BD%E4%BB%A4%E9%80%9F%E6%9F%A5/",
+            "title": "Mysql命令速查",
+            "date_published": "2025-01-01T16:00:00.000Z",
+            "content_html": "<h1 id=\"服务启动\"><a class=\"anchor\" href=\"#服务启动\">#</a> 服务启动</h1>\n<p><figure class=\"highlight bash\"><table><tr><td class=\"gutter\"><pre><span class=\"line\">1</span><br></pre></td><td class=\"code\"><pre><span class=\"line\">net start mysql</span><br></pre></td></tr></table></figure></p>\n<h1 id=\"服务停止\"><a class=\"anchor\" href=\"#服务停止\">#</a> 服务停止</h1>\n<p><figure class=\"highlight bash\"><table><tr><td class=\"gutter\"><pre><span class=\"line\">1</span><br></pre></td><td class=\"code\"><pre><span class=\"line\">net stop mysql</span><br></pre></td></tr></table></figure></p>\n<h1 id=\"用户登录\"><a class=\"anchor\" href=\"#用户登录\">#</a> 用户登录</h1>\n<p><figure class=\"highlight bash\"><table><tr><td class=\"gutter\"><pre><span class=\"line\">1</span><br></pre></td><td class=\"code\"><pre><span class=\"line\">mysql -u root -p</span><br></pre></td></tr></table></figure></p>\n<h1 id=\"用户退出\"><a class=\"anchor\" href=\"#用户退出\">#</a> 用户退出</h1>\n<p><figure class=\"highlight bash\"><table><tr><td class=\"gutter\"><pre><span class=\"line\">1</span><br></pre></td><td class=\"code\"><pre><span class=\"line\"><span class=\"built_in\">exit</span></span><br></pre></td></tr></table></figure></p>\n<h1 id=\"重置密码\"><a class=\"anchor\" href=\"#重置密码\">#</a> 重置密码</h1>\n<p><figure class=\"highlight bash\"><table><tr><td class=\"gutter\"><pre><span class=\"line\">1</span><br><span class=\"line\">2</span><br><span class=\"line\">3</span><br><span class=\"line\">4</span><br><span class=\"line\">5</span><br><span class=\"line\">6</span><br><span class=\"line\">7</span><br><span class=\"line\">8</span><br><span class=\"line\">9</span><br><span class=\"line\">10</span><br></pre></td><td class=\"code\"><pre><span class=\"line\"><span class=\"comment\"># 登录mysql</span></span><br><span class=\"line\">mysql -u root -p</span><br><span class=\"line\"><span class=\"comment\"># 执行以下命令</span></span><br><span class=\"line\">use mysql;</span><br><span class=\"line\">update user <span class=\"built_in\">set</span> authentication_string=password(<span class=\"string\">&#x27;123456&#x27;</span>) <span class=\"built_in\">where</span> user=<span class=\"string\">&#x27;root&#x27;</span>;</span><br><span class=\"line\">flush privileges;</span><br><span class=\"line\"><span class=\"built_in\">exit</span>;</span><br><span class=\"line\"><span class=\"comment\"># 重启mysql服务</span></span><br><span class=\"line\">net stop mysql</span><br><span class=\"line\">net start mysql</span><br></pre></td></tr></table></figure></p>\n<h1 id=\"查看数据库\"><a class=\"anchor\" href=\"#查看数据库\">#</a> 查看数据库</h1>\n<p><figure class=\"highlight bash\"><table><tr><td class=\"gutter\"><pre><span class=\"line\">1</span><br></pre></td><td class=\"code\"><pre><span class=\"line\">show databases;</span><br></pre></td></tr></table></figure></p>\n<h1 id=\"创建数据库\"><a class=\"anchor\" href=\"#创建数据库\">#</a> 创建数据库</h1>\n",
+            "tags": [
+                "数据库",
+                "开发笔记",
+                "Mysql"
+            ]
+        }
+    ]
+}

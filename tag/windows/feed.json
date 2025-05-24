@@ -1,0 +1,19 @@
+{
+    "version": "https://jsonfeed.org/version/1",
+    "title": "余年的个人空间 • All posts by \"windows\" tag",
+    "description": "学习笔记和随笔记录",
+    "home_page_url": "https://yunian.site",
+    "items": [
+        {
+            "id": "https://yunian.site/Tutorials/Windows/%E7%B3%BB%E7%BB%9F%E4%BD%BF%E7%94%A8/",
+            "url": "https://yunian.site/Tutorials/Windows/%E7%B3%BB%E7%BB%9F%E4%BD%BF%E7%94%A8/",
+            "title": "Windows优化",
+            "date_published": "2025-05-20T09:13:17.993Z",
+            "content_html": "<h2 id=\"彻底删除启动项\"><a class=\"anchor\" href=\"#彻底删除启动项\">#</a> 彻底删除启动项</h2>\n<p>对电脑中开机自启动的程序进行管理，可以减少不必要的资源性能占用。在 <code>任务管理器</code> 中，选择 <code>启动</code> 一栏，可以看到自启动程序列表，每个程序的 <code>命令行</code> 则可以看到其自启动文件的所在目录。</p>\n<p>之前清理启动项时，有一个 <code>program</code>  启动项不确定是什么程序，因此百度了一番，确定了它是 <code>微软Teams</code>  程序的残留，然后发现了不需要的启动项都可以通过删除文件及其注册表项的方法彻底禁用，这个方法可以将流氓程序彻底卸载而不用担心死灰复燃。</p>\n<p>具体操作方法为：根据启动项中程序的 <code>命令行</code> 信息，首先找到自启动文件的目录，将其全部删除，再通过 <code>Windows</code>  和 <code>R</code>  的快捷键打开 <code>运行</code> 窗口，输入 <code>regedit</code>  打开 <code>注册表编辑器</code> ，检查下面启动项相关的三个地方的注册表信息：</p>\n<p><figure class=\"highlight bash\"><table><tr><td class=\"gutter\"><pre><span class=\"line\">1</span><br><span class=\"line\">2</span><br><span class=\"line\">3</span><br></pre></td><td class=\"code\"><pre><span class=\"line\">计算机\\HKEY_CURRENT_USER\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Run</span><br><span class=\"line\">计算机\\HKEY_LOCAL_MACHINE\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Run</span><br><span class=\"line\">计算机\\HKEY_LOCAL_MACHINE\\SOFTWARE\\WOW6432Node\\Microsoft\\Windows\\CurrentVersion\\Run</span><br></pre></td></tr></table></figure></p>\n<p>找到 <code>自启动程序</code> 命令行所对应的注册表信息，右键选择将其删除即可。</p>\n<h2 id=\"窗口移动到屏幕外无法操作\"><a class=\"anchor\" href=\"#窗口移动到屏幕外无法操作\">#</a> 窗口移动到屏幕外无法操作</h2>\n<p>有些窗口拖动到了屏幕外导致无法用鼠标再操作移动，此时可以通过键盘将窗口移回屏幕内。</p>\n<p>首先用 <code>alt</code>  和 <code>tab</code>  快捷键切换到需要移动的窗口，再用 <code>alt</code>  和 <code>space空格</code> 快捷键激活窗口操作菜单， <code>鼠标左键</code> 单击菜单中的 <code>移动</code> 一项，将窗口拉长一部分到屏幕内，或者按 <code>M</code>  键再使用方向键上下移动窗口到屏幕内，即可重新操作窗口。</p>\n<h2 id=\"google浏览器使用edge浏览器插件\"><a class=\"anchor\" href=\"#google浏览器使用edge浏览器插件\">#</a> Google 浏览器使用 Edge 浏览器插件</h2>\n<p>Google 浏览器的扩展商店需要魔法才能访问，但是在开发者模式下可以加载已下载的插件，所以可以先通过系统自带的 Edge 浏览器扩展商店下载需要的插件，再在 Google 浏览器中加载即可使用。</p>\n<p>Google 浏览器扩展管理进入开发者模式及加载已下载插件方法：</p>\n<ol>\n<li>点击右上角竖着的三个点，点击 <code>扩展程序</code> ，选择 <code>管理扩展程序</code> 。</li>\n<li>在 <code>扩展程序</code> 页面右上角有 <code>开发者模式</code> 字样，点击文字边的按钮即可进入 <code>开发者模式</code> 。</li>\n<li>点击弹出的 <code>加载已解压的扩展程序</code> ，在弹出的 <code>文件管理器</code> 中进入解压后的插件文件夹后，点击 <code>文件管理器</code> 下方的 <code>选择文件夹</code> 即可加载对应扩展。</li>\n</ol>\n<p>Edge 浏览器插件文件夹的默认位置： <code>C:\\Users\\用户名\\AppData\\Local\\Microsoft\\Edge\\User Data\\Default\\Extensions\\</code> ，插件文件夹名称为乱码，可以根据文件夹的 <code>修改时间</code> 和进入文件夹内显示的插件 <code>版本号</code> 等信息确认具体为哪个插件。</p>\n",
+            "tags": [
+                "软件使用",
+                "Windows"
+            ]
+        }
+    ]
+}

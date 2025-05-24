@@ -1,0 +1,69 @@
+<?xml version="1.0"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <id>https://yunian.site</id>
+    <title>余年的个人空间 • Posts by &#34;软件使用&#34; tag</title>
+    <link href="https://yunian.site" />
+    <updated>2025-05-20T09:13:17.993Z</updated>
+    <category term="个人博客" />
+    <category term="Hexo" />
+    <category term="Shoka主题" />
+    <category term="Markdown" />
+    <category term="Shoka" />
+    <category term="开发工具" />
+    <category term="Python" />
+    <category term="数据库" />
+    <category term="服务器运维" />
+    <category term="git" />
+    <category term="图床" />
+    <category term="图库" />
+    <category term="公开课" />
+    <category term="图书" />
+    <category term="论文" />
+    <category term="资源" />
+    <category term="系统工具" />
+    <category term="应用软件" />
+    <category term="图片" />
+    <category term="图标" />
+    <category term="字体" />
+    <category term="音效" />
+    <category term="素材" />
+    <category term="视频后期" />
+    <category term="开发笔记" />
+    <category term="Pycharm" />
+    <category term="Anaconda" />
+    <category term="Mysql" />
+    <category term="SQL" />
+    <category term="Word" />
+    <category term="空白页" />
+    <category term="linux" />
+    <category term="Excel" />
+    <category term="软件使用" />
+    <category term="Windows" />
+    <entry>
+        <id>https://yunian.site/Tutorials/Windows/%E7%B3%BB%E7%BB%9F%E4%BD%BF%E7%94%A8/</id>
+        <title>Windows优化</title>
+        <link rel="alternate" href="https://yunian.site/Tutorials/Windows/%E7%B3%BB%E7%BB%9F%E4%BD%BF%E7%94%A8/"/>
+        <content type="html">&lt;h2 id=&#34;彻底删除启动项&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#彻底删除启动项&#34;&gt;#&lt;/a&gt; 彻底删除启动项&lt;/h2&gt;
+&lt;p&gt;对电脑中开机自启动的程序进行管理，可以减少不必要的资源性能占用。在 &lt;code&gt;任务管理器&lt;/code&gt; 中，选择 &lt;code&gt;启动&lt;/code&gt; 一栏，可以看到自启动程序列表，每个程序的 &lt;code&gt;命令行&lt;/code&gt; 则可以看到其自启动文件的所在目录。&lt;/p&gt;
+&lt;p&gt;之前清理启动项时，有一个 &lt;code&gt;program&lt;/code&gt;  启动项不确定是什么程序，因此百度了一番，确定了它是 &lt;code&gt;微软Teams&lt;/code&gt;  程序的残留，然后发现了不需要的启动项都可以通过删除文件及其注册表项的方法彻底禁用，这个方法可以将流氓程序彻底卸载而不用担心死灰复燃。&lt;/p&gt;
+&lt;p&gt;具体操作方法为：根据启动项中程序的 &lt;code&gt;命令行&lt;/code&gt; 信息，首先找到自启动文件的目录，将其全部删除，再通过 &lt;code&gt;Windows&lt;/code&gt;  和 &lt;code&gt;R&lt;/code&gt;  的快捷键打开 &lt;code&gt;运行&lt;/code&gt; 窗口，输入 &lt;code&gt;regedit&lt;/code&gt;  打开 &lt;code&gt;注册表编辑器&lt;/code&gt; ，检查下面启动项相关的三个地方的注册表信息：&lt;/p&gt;
+&lt;p&gt;&lt;figure class=&#34;highlight bash&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;计算机\HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\Run&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;计算机\HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Run&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;计算机\HKEY_LOCAL_MACHINE\SOFTWARE\WOW6432Node\Microsoft\Windows\CurrentVersion\Run&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/p&gt;
+&lt;p&gt;找到 &lt;code&gt;自启动程序&lt;/code&gt; 命令行所对应的注册表信息，右键选择将其删除即可。&lt;/p&gt;
+&lt;h2 id=&#34;窗口移动到屏幕外无法操作&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#窗口移动到屏幕外无法操作&#34;&gt;#&lt;/a&gt; 窗口移动到屏幕外无法操作&lt;/h2&gt;
+&lt;p&gt;有些窗口拖动到了屏幕外导致无法用鼠标再操作移动，此时可以通过键盘将窗口移回屏幕内。&lt;/p&gt;
+&lt;p&gt;首先用 &lt;code&gt;alt&lt;/code&gt;  和 &lt;code&gt;tab&lt;/code&gt;  快捷键切换到需要移动的窗口，再用 &lt;code&gt;alt&lt;/code&gt;  和 &lt;code&gt;space空格&lt;/code&gt; 快捷键激活窗口操作菜单， &lt;code&gt;鼠标左键&lt;/code&gt; 单击菜单中的 &lt;code&gt;移动&lt;/code&gt; 一项，将窗口拉长一部分到屏幕内，或者按 &lt;code&gt;M&lt;/code&gt;  键再使用方向键上下移动窗口到屏幕内，即可重新操作窗口。&lt;/p&gt;
+&lt;h2 id=&#34;google浏览器使用edge浏览器插件&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#google浏览器使用edge浏览器插件&#34;&gt;#&lt;/a&gt; Google 浏览器使用 Edge 浏览器插件&lt;/h2&gt;
+&lt;p&gt;Google 浏览器的扩展商店需要魔法才能访问，但是在开发者模式下可以加载已下载的插件，所以可以先通过系统自带的 Edge 浏览器扩展商店下载需要的插件，再在 Google 浏览器中加载即可使用。&lt;/p&gt;
+&lt;p&gt;Google 浏览器扩展管理进入开发者模式及加载已下载插件方法：&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;点击右上角竖着的三个点，点击 &lt;code&gt;扩展程序&lt;/code&gt; ，选择 &lt;code&gt;管理扩展程序&lt;/code&gt; 。&lt;/li&gt;
+&lt;li&gt;在 &lt;code&gt;扩展程序&lt;/code&gt; 页面右上角有 &lt;code&gt;开发者模式&lt;/code&gt; 字样，点击文字边的按钮即可进入 &lt;code&gt;开发者模式&lt;/code&gt; 。&lt;/li&gt;
+&lt;li&gt;点击弹出的 &lt;code&gt;加载已解压的扩展程序&lt;/code&gt; ，在弹出的 &lt;code&gt;文件管理器&lt;/code&gt; 中进入解压后的插件文件夹后，点击 &lt;code&gt;文件管理器&lt;/code&gt; 下方的 &lt;code&gt;选择文件夹&lt;/code&gt; 即可加载对应扩展。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Edge 浏览器插件文件夹的默认位置： &lt;code&gt;C:\Users\用户名\AppData\Local\Microsoft\Edge\User Data\Default\Extensions\&lt;/code&gt; ，插件文件夹名称为乱码，可以根据文件夹的 &lt;code&gt;修改时间&lt;/code&gt; 和进入文件夹内显示的插件 &lt;code&gt;版本号&lt;/code&gt; 等信息确认具体为哪个插件。&lt;/p&gt;
+</content>
+        <category term="软件使用" />
+        <category term="Windows" />
+        <updated>2025-05-20T09:13:17.993Z</updated>
+    </entry>
+</feed>

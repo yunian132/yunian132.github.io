@@ -1,0 +1,18 @@
+{
+    "version": "https://jsonfeed.org/version/1",
+    "title": "余年的个人空间 • All posts by \"excel\" tag",
+    "description": "学习笔记和随笔记录",
+    "home_page_url": "https://yunian.site",
+    "items": [
+        {
+            "id": "https://yunian.site/Tutorials/Office/Excel%E8%A1%A8%E6%A0%BC-%E5%9F%BA%E7%A1%80%E4%BD%BF%E7%94%A8/",
+            "url": "https://yunian.site/Tutorials/Office/Excel%E8%A1%A8%E6%A0%BC-%E5%9F%BA%E7%A1%80%E4%BD%BF%E7%94%A8/",
+            "title": "Excel表格-基础使用",
+            "date_published": "2025-05-20T09:13:17.981Z",
+            "content_html": "<h1 id=\"excel表格-基础使用\"><a class=\"anchor\" href=\"#excel表格-基础使用\">#</a> Excel 表格 - 基础使用</h1>\n<h2 id=\"设置表格外部空白\"><a class=\"anchor\" href=\"#设置表格外部空白\">#</a> 设置表格外部空白</h2>\n<p>有时候出于显示或者打印的要求，会将表格的外部区域设置为空白，即只保留表格的边界和内部框线，而表外不显示任何框线。</p>\n<p>实现该效果其实也很简单，只要将表格的框线根据需求设置好，在菜单区找到 <code>视图</code> ，取消勾选 <code>网格线</code> 即可。</p>\n<h2 id=\"序号填充\"><a class=\"anchor\" href=\"#序号填充\">#</a> 序号填充</h2>\n<p>手动编写的序号在某些行删除或者新增后，无法自动更新序号，此时可以在序号列中使用 <code>RAW()</code>  函数根据行号设置序号。</p>\n<p>单元格中的 <code>RAW()</code>  函数可以获取单元格所在行的行号，并且可以参与公式运算，所以通常将行号值减去表头所占行数即可得到一个递增的顺序序列，此方法生成的序号会随着单元格所在行号的变化而自动调整。</p>\n",
+            "tags": [
+                "Excel"
+            ]
+        }
+    ]
+}

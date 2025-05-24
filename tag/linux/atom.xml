@@ -1,0 +1,62 @@
+<?xml version="1.0"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <id>https://yunian.site</id>
+    <title>余年的个人空间 • Posts by &#34;linux&#34; tag</title>
+    <link href="https://yunian.site" />
+    <updated>2024-12-23T16:00:00.000Z</updated>
+    <category term="个人博客" />
+    <category term="Hexo" />
+    <category term="Shoka主题" />
+    <category term="Markdown" />
+    <category term="Shoka" />
+    <category term="开发工具" />
+    <category term="Python" />
+    <category term="数据库" />
+    <category term="服务器运维" />
+    <category term="git" />
+    <category term="图床" />
+    <category term="图库" />
+    <category term="公开课" />
+    <category term="图书" />
+    <category term="论文" />
+    <category term="资源" />
+    <category term="系统工具" />
+    <category term="应用软件" />
+    <category term="图片" />
+    <category term="图标" />
+    <category term="字体" />
+    <category term="音效" />
+    <category term="素材" />
+    <category term="视频后期" />
+    <category term="开发笔记" />
+    <category term="Pycharm" />
+    <category term="Anaconda" />
+    <category term="Mysql" />
+    <category term="SQL" />
+    <category term="Word" />
+    <category term="空白页" />
+    <category term="linux" />
+    <category term="Excel" />
+    <category term="软件使用" />
+    <category term="Windows" />
+    <entry>
+        <id>https://yunian.site/Note/Linux/Linux%E5%91%BD%E4%BB%A4%E9%80%9F%E6%9F%A5/</id>
+        <title>Linux命令速查</title>
+        <link rel="alternate" href="https://yunian.site/Note/Linux/Linux%E5%91%BD%E4%BB%A4%E9%80%9F%E6%9F%A5/"/>
+        <content type="html">&lt;h2 id=&#34;文件管理&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#文件管理&#34;&gt;#&lt;/a&gt; 文件管理&lt;/h2&gt;
+&lt;p&gt;-- 删除路径下一定修改时间前的文件&lt;br /&gt;
+ &lt;figure class=&#34;highlight vim&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;keyword&#34;&gt;find&lt;/span&gt; /etl/job/script/logs -mtime +&lt;span class=&#34;number&#34;&gt;10&lt;/span&gt; -name &lt;span class=&#34;string&#34;&gt;&amp;#x27;*.log&amp;#x27;&lt;/span&gt; -exec rm -rf &amp;#123;&amp;#125; \;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/p&gt;
+&lt;p&gt;注:/&#39;*.log&#39; 为日志文件后缀；+10 表示修改时间为 10 天前；&lt;/p&gt;
+&lt;h2 id=&#34;crontab定时模块&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#crontab定时模块&#34;&gt;#&lt;/a&gt; crontab 定时模块&lt;/h2&gt;
+&lt;p&gt;前注：&lt;br /&gt;
+1、远程连接时，若误使用 crontab 命令等其他导致异常的情况，需要使用 &#39;Ctrl + C&#39; 命令先退出异常；&lt;br /&gt;
+ 如果直接断开远程连接，将会导致计划列表被清空。&lt;br /&gt;
+2、定时命令格式为 &#39;* * * * * sh [脚本文件路径 (含文件名及后缀)] [参数 1] [参数 2] ...&#39;;&lt;br /&gt;
+ 其中 &#39;*&#39; 的位置分别对应分、时、天、月、年的时刻。&lt;br /&gt;
+&lt;figure class=&#34;highlight vim&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;10&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;11&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;--添加定时计划&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;crontab -&lt;span class=&#34;keyword&#34;&gt;e&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;--删除定时计划&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;crontab -r&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;--显示定时计划列表&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;crontab -&lt;span class=&#34;keyword&#34;&gt;l&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;--编辑定时计划内容&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;crontab -&lt;span class=&#34;keyword&#34;&gt;e&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/p&gt;
+</content>
+        <category term="开发笔记" />
+        <category term="linux" />
+        <updated>2024-12-23T16:00:00.000Z</updated>
+    </entry>
+</feed>
